@@ -1,0 +1,20 @@
+---
+import { formatMilestone, getGenreLabel, type Game } from '../data/games';
+interface Props { game: Game; index?: number; featured?: boolean }
+const { game, index = 0, featured = false } = Astro.props;
+const visits = formatMilestone(game.lifetimeVisits);
+---
+<article class:list={['game-card', 'theme-' + game.genre, { 'game-card-featured': featured }]} data-game-card data-genres={[game.genre, ...(game.tags ?? [])].join(' ')} style={'--card-index:' + index}>
+  <a class="game-card-art" href={'/games/' + game.slug + '/'} aria-label={'View ' + game.title}>
+    {game.artwork ? <img src={game.artwork} alt={game.title + ' game artwork'} loading="lazy"/> : <div class="card-placeholder" aria-hidden="true"><span class="placeholder-orbit orbit-a"></span><span class="placeholder-orbit orbit-b"></span><span class="placeholder-sun"></span><span class="placeholder-land"></span><span class="placeholder-serial">RED PARASOL / {String(index + 1).padStart(2, '0')}</span></div>}
+    <span class="game-card-art-title">{game.shortTitle ?? game.title}</span>
+    <span class="card-corner-arrow" aria-hidden="true">↗</span>
+  </a>
+  <div class="game-card-bottom">
+    <div>
+      <p class="eyebrow small-eyebrow">{getGenreLabel(game.genre)}</p>
+      <h3><a href={'/games/' + game.slug + '/'}>{game.title}</a></h3>
+    </div>
+    {visits && <span class="visits-pill">{visits} visits</span>}
+  </div>
+</article>
