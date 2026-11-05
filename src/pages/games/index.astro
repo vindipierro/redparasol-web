@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import GameCard from '../../components/GameCard.astro';
+import { games, genres } from '../../data/games';
+---
+<BaseLayout title="Our Games" description="Explore Red Parasol's active Roblox roleplay worlds and simulation games.">
+  <section class="page-hero games-page-hero">
+    <div class="container page-hero-inner">
+      <p class="eyebrow">THE RED PARASOL COLLECTION / {String(games.length).padStart(2,'0')} EXPERIENCES</p>
+      <h1>Find a world<br/><em>to call your own.</em></h1>
+      <p>School halls, government offices, trading routes, and adventures you haven't imagined yet. There's a story for every player.</p>
+      <span class="page-deco" aria-hidden="true">✳</span>
+    </div>
+  </section>
+  <section class="section-dark catalog-section">
+    <div class="container">
+      <div class="catalog-toolbar">
+        <div><p class="eyebrow red-eyebrow">EXPLORE THE CATALOG</p><h2>All experiences<span class="title-dot">.</span></h2></div>
+        <p class="catalog-counter" aria-live="polite"><span id="visible-count">{games.length}</span> games</p>
+      </div>
+      <div class="filter-bar" role="group" aria-label="Filter games by genre">
+        <button class="filter-button is-active" data-filter="all" aria-pressed="true" type="button">All games</button>
+        {genres.map((genre) => <button class="filter-button" data-filter={genre.id} aria-pressed="false" type="button">{genre.label}</button>)}
+      </div>
+      <div class="catalog-grid" id="catalog-grid">
+        {games.map((game, index) => <GameCard game={game} index={index}/>)}
+      </div>
+      <p class="catalog-footnote">This catalog features currently playable experiences. Studio-wide historical statistics also account for past and reuploaded titles once reconciled.</p>
+    </div>
+  </section>
+  <script>
+    const buttons = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-filter]'));
+    const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-game-card]'));
+    const count = document.getElementById('visible-count');
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const filter = button.dataset.filter ?? 'all';
+        buttons.forEach((item) => {
+          const active = item === button;
+          item.classList.toggle('is-active', active);
+          item.setAttribute('aria-pressed', String(active));
+        });
+        let visible = 0;
+        cards.forEach((card) => {
+          const tags = card.dataset.genres?.split(' ') ?? [];
+          const matches = filter === 'all' || tags.includes(filter);
+          card.hidden = !matches;
+          if (matches) visible++;
+        });
+        if (count) count.textContent = String(visible);
+      });
+    });
+  </script>
+</BaseLayout>

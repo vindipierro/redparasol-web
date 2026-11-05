@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { games, formatMilestone, getGenreLabel, type Game } from '../../data/games';
+export function getStaticPaths() {
+  return games.map((game) => ({ params: { slug: game.slug }, props: { game } }));
+}
+interface Props { game: Game }
+const { game } = Astro.props;
+const visits = formatMilestone(game.lifetimeVisits);
+const related = games.filter((item) => item.slug !== game.slug && (item.genre === game.genre || (item.tags ?? []).includes(game.genre))).slice(0, 3);
+---
+<BaseLayout title={game.title} description={game.description}>
+  <section class="detail-top">
+    <div class="container">
+      <a href="/games/" class="back-link">← All games</a>
+      <div class="detail-title-row">
+        <div><p class="eyebrow">{getGenreLabel(game.genre)} / RED PARASOL</p><h1>{game.title}</h1><p class="detail-description">{game.description}</p></div>
+        {game.robloxUrl ? <a class="button button-dark detail-cta" href={game.robloxUrl} target="_blank" rel="noopener noreferrer">Play on Roblox <span aria-hidden="true">↗</span></a> : <span class="button button-muted detail-cta" aria-label="Direct game link not yet verified">Play link pending</span>}
+      </div>
+    </div>
+  </section>
+  <section class:list={['detail-art-stage', 'theme-' + game.genre]}>
+    <div class="container">
+      {game.banner ? <img class="detail-banner" src={game.banner} alt={game.title + ' official artwork'}/> : <div class="detail-art-placeholder"><span class="detail-art-sun"></span><span class="detail-art-ring"></span><span class="detail-art-shape"></span><strong>{game.shortTitle ?? game.title}</strong><small>GAME ARTWORK / COMING SOON</small></div>}
+    </div>
+  </section>
+  <section class="section section-dark detail-body">
+    <div class="container">
+      <p class="eyebrow red-eyebrow">THE EXPERIENCE</p>
+      <div class="detail-facts">
+        <div><span>Genre</span><strong>{getGenreLabel(game.genre)}</strong></div>
+        {visits && <div><span>Lifetime visits</span><strong>{visits}</strong></div>}
+        {game.releaseYear && <div><span>First released</span><strong>{game.releaseYear}</strong></div>}
+      </div>
+      {(!visits || !game.releaseYear) && <p class="detail-data-note">Additional verified release and lifetime visit details will appear here once confirmed.</p>}
+      {game.robloxUrl && <a class="button button-coral" href={game.robloxUrl} target="_blank" rel="noopener noreferrer">Open experience on Roblox <span aria-hidden="true">↗</span></a>}
+      {related.length > 0 && <div class="related-section"><h2>More worlds to explore<span class="title-dot">.</span></h2><div class="related-links">{related.map((item) => <a href={'/games/' + item.slug + '/'}><span>{item.shortTitle ?? item.title}</span><span aria-hidden="true">↗</span></a>)}</div></div>}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,72 @@
+---
+import '../styles/global.css';
+import { studio } from '../data/studio';
+interface Props { title?: string; description?: string }
+const { title = studio.name, description = studio.description } = Astro.props;
+const pageTitle = title === studio.name ? studio.name + ' | We Build Worlds. You Write the Story.' : title + ' | ' + studio.name;
+const path = Astro.url.pathname;
+const year = new Date().getFullYear();
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#1e2430"/>
+    <meta name="description" content={description}/>
+    <link rel="canonical" href={new URL(path, studio.siteUrl).toString()}/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Red Parasol"/>
+    <meta property="og:title" content={pageTitle}/>
+    <meta property="og:description" content={description}/>
+    <meta property="og:url" content={new URL(path, studio.siteUrl).toString()}/>
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header-inner container">
+        <a class="brand" href="/" aria-label="Red Parasol home">
+          <img class="brand-icon" src="/images/brand/mascot-reference.png" alt="" width="46" height="46"/>
+          <span>RED <span>PARASOL</span></span>
+        </a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="/" aria-current={path === '/' ? 'page' : undefined}>Home</a>
+          <a href="/games/" aria-current={path.startsWith('/games') ? 'page' : undefined}>Games</a>
+          <a href="/about/" aria-current={path.startsWith('/about') ? 'page' : undefined}>About</a>
+          <a class="nav-cta" href="/games/">Explore games <span aria-hidden="true">↗</span></a>
+        </nav>
+        <details class="mobile-nav">
+          <summary aria-label="Open navigation">Menu <span aria-hidden="true">☰</span></summary>
+          <nav aria-label="Mobile navigation">
+            <a href="/">Home</a>
+            <a href="/games/">Games</a>
+            <a href="/about/">About</a>
+          </nav>
+        </details>
+      </div>
+    </header>
+    <main id="main"><slot/></main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a class="brand" href="/"><img class="brand-icon" src="/images/brand/mascot-reference.png" alt="" width="46" height="46"/><span>RED <span>PARASOL</span></span></a>
+          <p>We build worlds. You write the story.</p>
+        </div>
+        <div class="footer-links">
+          <div><span class="footer-label">Explore</span><a href="/games/">All games</a><a href="/about/">Our studio</a></div>
+          <div><span class="footer-label">Connect</span>
+            {studio.contactEmail ? <a href={'mailto:' + studio.contactEmail}>Business inquiries</a> : <span class="footer-unavailable">Business email to be added</span>}
+            {studio.robloxGroupUrl && <a href={studio.robloxGroupUrl} target="_blank" rel="noopener noreferrer">Roblox group ↗</a>}
+            {studio.socials.map((social) => <a href={social.url} target="_blank" rel="noopener noreferrer">{social.label} ↗</a>)}
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom container"><span>© {year} Red Parasol. All rights reserved.</span><span>Made for worlds worth exploring.</span></div>
+    </footer>
+  </body>
+</html>
