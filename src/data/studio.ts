@@ -16,13 +16,13 @@ export const studio = {
  * - Lifetime totals are reconciled manually across original and reuploaded experiences.
  * - The catalog lists only active/playable games.
  * - Retired titles contribute to the historical studio-wide total when verified.
- * - 88,444,580 is the documented lower-bound subtotal from 13 active
- *   titles including six older versions, plus nine additional Chesapeake Studios / Archive
- *   titles. Each universe is counted once (snapshot 2026-11-05 ET).
+ * - 88,503,037 is the documented lower-bound subtotal from 13 active
+ *   titles including seven older versions, plus nine additional Chesapeake Studios / Archive
+ *   titles. Each universe is counted once (snapshots through 2026-11-06 ET).
  * - Older unlisted/removed Roblox experiences may still be undiscovered.
  * - Only update this lower bound upward with independently verified nonoverlapping releases.
  */
-export const historicStudioMilestone: number | null = 88444580;
+export const historicStudioMilestone: number | null = 88503037;
 
 // Studio-provided estimate for the public homepage. Separate from the audited historical subtotal.
 export const homepageLifetimeVisitsLabel = '100M+';

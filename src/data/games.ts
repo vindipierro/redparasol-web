@@ -130,10 +130,10 @@ export const games: Game[] = [
     shortTitle: 'Moosewood',
     genre: 'school',
     description: 'Spend an endless summer at Moosewood Camp, making friends as a camper or leading your cabin as a counselor.',
-    releaseYear: 2026,
-    releaseMonth: 6,
+    releaseYear: 2025,
+    releaseMonth: 10,
     historicalPlaceIds: [76324638514569],
-    lifetimeVisits: 550833,
+    lifetimeVisits: 609290,
     peakCCU: null,
     robloxUrl: 'https://www.roblox.com/games/84326252804702/Moosewood-Camp-Roleplay'
   },
