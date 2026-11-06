@@ -1,12 +1,14 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { games, formatMilestone, getGenreLabel, type Game } from '../../data/games';
+import officialArtwork from '../../data/game-thumbnails.json';
 export function getStaticPaths() {
   return games.map((game) => ({ params: { slug: game.slug }, props: { game } }));
 }
 interface Props { game: Game }
 const { game } = Astro.props;
 const visits = formatMilestone(game.lifetimeVisits);
+const banner = game.banner ?? (officialArtwork as Record<string, string>)[game.slug];
 const related = games.filter((item) => item.slug !== game.slug && (item.genre === game.genre || (item.tags ?? []).includes(game.genre))).slice(0, 3);
 ---
 <BaseLayout title={game.title} description={game.description}>
@@ -21,7 +23,7 @@ const related = games.filter((item) => item.slug !== game.slug && (item.genre ==
   </section>
   <section class:list={['detail-art-stage', 'theme-' + game.genre]}>
     <div class="container">
-      {game.banner ? <img class="detail-banner" src={game.banner} alt={game.title + ' official artwork'}/> : <div class="detail-art-placeholder"><span class="detail-art-sun"></span><span class="detail-art-ring"></span><span class="detail-art-shape"></span><strong>{game.shortTitle ?? game.title}</strong><small>GAME ARTWORK / COMING SOON</small></div>}
+      {banner ? <img class="detail-banner" src={banner} alt={game.title + ' official artwork'}/> : <div class="detail-art-placeholder"><span class="detail-art-sun"></span><span class="detail-art-ring"></span><span class="detail-art-shape"></span><strong>{game.shortTitle ?? game.title}</strong><small>GAME ARTWORK / COMING SOON</small></div>}
     </div>
   </section>
   <section class="section section-dark detail-body">

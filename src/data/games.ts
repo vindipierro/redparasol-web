@@ -33,7 +33,7 @@ export const games: Game[] = [
     featured: true,
     releaseYear: null,
     lifetimeVisits: null,
-    robloxUrl: 'https://www.roblox.com/games/126631821717419/'
+    robloxUrl: 'https://www.roblox.com/games/126631821717419/Seishun-School-Life-Roleplay'
   },
   {
     slug: 'oath-of-office',
@@ -43,7 +43,7 @@ export const games: Game[] = [
     featured: true,
     releaseYear: null,
     lifetimeVisits: null,
-    robloxUrl: null
+    robloxUrl: 'https://www.roblox.com/games/83895704311875/Oath-of-Office-Political-Roleplay'
   },
   {
     slug: 'silk-road',
@@ -53,7 +53,7 @@ export const games: Game[] = [
     featured: true,
     releaseYear: null,
     lifetimeVisits: null,
-    robloxUrl: null
+    robloxUrl: 'https://www.roblox.com/games/103073154610301/Silk-Road-Trading-Simulator'
   },
   {
     slug: 'command-authority',
@@ -63,7 +63,7 @@ export const games: Game[] = [
     featured: true,
     releaseYear: null,
     lifetimeVisits: null,
-    robloxUrl: null
+    robloxUrl: 'https://www.roblox.com/games/121909225020263/Command-Authority-Military-Roleplay'
   },
   {
     slug: 'kiseki',
@@ -72,7 +72,7 @@ export const games: Game[] = [
     description: 'A social roleplay experience where players make everyday moments their own.',
     releaseYear: null,
     lifetimeVisits: null,
-    robloxUrl: null
+    robloxUrl: 'https://www.roblox.com/games/133366389873083/Kiseki-Rival-Academies-Roleplay'
   },
   {
     slug: 'line-of-fire',
@@ -82,7 +82,7 @@ export const games: Game[] = [
     description: 'A security-focused roleplay experience with immersive responsibilities and roles.',
     releaseYear: null,
     lifetimeVisits: null,
-    robloxUrl: null
+    robloxUrl: 'https://www.roblox.com/games/127499782145032/Line-of-Fire-Secret-Service-Roleplay'
   },
   {
     slug: 'anime-trading-simulator',
@@ -100,7 +100,7 @@ export const games: Game[] = [
     description: 'Discover social adventures in a camp-inspired roleplay setting.',
     releaseYear: null,
     lifetimeVisits: null,
-    robloxUrl: null
+    robloxUrl: 'https://www.roblox.com/games/84326252804702/Moosewood-Camp-Roleplay'
   },
   {
     slug: 'command-authority-second-strike',
@@ -118,7 +118,7 @@ export const games: Game[] = [
     description: 'Learn, train, and roleplay in a military academy setting.',
     releaseYear: null,
     lifetimeVisits: null,
-    robloxUrl: null
+    robloxUrl: 'https://www.roblox.com/games/136611085381274/Marine-Academy-Military-Roleplay'
   },
   {
     slug: 'navy-academy',
@@ -136,7 +136,7 @@ export const games: Game[] = [
     description: 'A structured academy roleplay experience for aspiring recruits.',
     releaseYear: null,
     lifetimeVisits: null,
-    robloxUrl: null
+    robloxUrl: 'https://www.roblox.com/games/135329589664705/Army-Academy-Military-Roleplay'
   },
   {
     slug: 'clean-a-bloxbuster',
@@ -145,7 +145,7 @@ export const games: Game[] = [
     description: 'Clean up, organize, and keep a movie store running in a playful simulator.',
     releaseYear: null,
     lifetimeVisits: null,
-    robloxUrl: null
+    robloxUrl: 'https://www.roblox.com/games/108909066053989/Clean-a-Bloxbuster'
   }
 ];
 
