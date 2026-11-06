@@ -30,6 +30,10 @@ RETIRED = [
     {"slug": "port-of-entry", "placeId": 130949000912906, "label": "Chesapeake Archive / originally Chesapeake Studios"},
     {"slug": "the-foundation", "placeId": 90503149907738, "label": "Chesapeake Archive / originally Chesapeake Studios"},
     {"slug": "white-house-roleplay", "placeId": 96875176477583, "label": "Chesapeake Archive / originally Chesapeake Studios"},
+    {"slug": "oath-of-office-philippines", "placeId": 18924296207, "label": "Chesapeake Archive regional Oath of Office"},
+    {"slug": "oath-of-office-brazil", "placeId": 70887751835501, "label": "Chesapeake Archive regional Oath of Office"},
+    {"slug": "election-simulator", "placeId": 138882558149118, "label": "Chesapeake Archive"},
+    {"slug": "executive-orders-legacy", "placeId": 117183744684585, "label": "Chesapeake Archive"},
 ]
 EXPLICIT_GROUPS = {
     17005184: "Chesapeake Studios",
