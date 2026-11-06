@@ -20,7 +20,7 @@ const related = games.filter((item) => item.slug !== game.slug && (item.genre ==
       <a href="/games/" class="back-link">← All games</a>
       <div class="detail-title-row">
         <div><p class="eyebrow">{getGenreLabel(game.genre)} / RED PARASOL</p><h1>{game.title}</h1><p class="detail-description">{game.description}</p></div>
-        {game.robloxUrl ? <a class="button button-dark detail-cta" href={game.robloxUrl} target="_blank" rel="noopener noreferrer">Play on Roblox <span aria-hidden="true">↗</span></a> : <span class="button button-muted detail-cta" aria-label="Direct game link not yet verified">Play link pending</span>}
+        {game.robloxUrl ? <a class="button button-dark detail-cta" href={game.robloxUrl} target="_blank" rel="noopener noreferrer">Play on Roblox <span class="outbound-arrow" aria-hidden="true"></span></a> : <span class="button button-muted detail-cta" aria-label="Direct game link not yet verified">Play link pending</span>}
       </div>
     </div>
   </section>
@@ -39,8 +39,8 @@ const related = games.filter((item) => item.slug !== game.slug && (item.genre ==
         {release && <div><span>Release</span><strong>{release}</strong></div>}
       </div>
       {(game.peakCCU === null) && <p class="detail-data-note">Additional verified historical peak CCU details will appear here when available.</p>}
-      {game.robloxUrl && <a class="button button-coral" href={game.robloxUrl} target="_blank" rel="noopener noreferrer">Open experience on Roblox <span aria-hidden="true">↗</span></a>}
-      {related.length > 0 && <div class="related-section"><h2>More worlds to explore<span class="title-dot">.</span></h2><div class="related-links">{related.map((item) => <a href={'/games/' + item.slug + '/'}><span>{item.shortTitle ?? item.title}</span><span aria-hidden="true">↗</span></a>)}</div></div>}
+      {game.robloxUrl && <a class="button button-coral" href={game.robloxUrl} target="_blank" rel="noopener noreferrer">Open experience on Roblox <span class="outbound-arrow" aria-hidden="true"></span></a>}
+      {related.length > 0 && <div class="related-section"><h2>More worlds to explore<span class="title-dot">.</span></h2><div class="related-links">{related.map((item) => <a href={'/games/' + item.slug + '/'}><span>{item.shortTitle ?? item.title}</span><span class="outbound-arrow" aria-hidden="true"></span></a>)}</div></div>}
     </div>
   </section>
 </BaseLayout>

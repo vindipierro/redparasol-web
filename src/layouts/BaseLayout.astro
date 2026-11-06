@@ -38,7 +38,7 @@ const year = new Date().getFullYear();
           <a href="/" aria-current={path === '/' ? 'page' : undefined}>Home</a>
           <a href="/games/" aria-current={path.startsWith('/games') ? 'page' : undefined}>Games</a>
           <a href="/about/" aria-current={path.startsWith('/about') ? 'page' : undefined}>About</a>
-          <a class="nav-cta" href="/games/">Explore games <span aria-hidden="true">↗</span></a>
+          <a class="nav-cta" href="/games/">Explore games <span class="outbound-arrow" aria-hidden="true"></span></a>
         </nav>
         <details class="mobile-nav">
           <summary aria-label="Open navigation">Menu <span aria-hidden="true">☰</span></summary>
@@ -61,8 +61,8 @@ const year = new Date().getFullYear();
           <div><span class="footer-label">Explore</span><a href="/games/">All games</a><a href="/about/">Our studio</a></div>
           <div><span class="footer-label">Connect</span>
             {studio.contactEmail ? <a href={'mailto:' + studio.contactEmail}>Business inquiries</a> : <span class="footer-unavailable">Business email to be added</span>}
-            {studio.robloxGroupUrl && <a href={studio.robloxGroupUrl} target="_blank" rel="noopener noreferrer">Roblox group ↗</a>}
-            {studio.socials.map((social) => <a href={social.url} target="_blank" rel="noopener noreferrer">{social.label} ↗</a>)}
+            {studio.robloxGroupUrl && <a href={studio.robloxGroupUrl} target="_blank" rel="noopener noreferrer">Roblox group ↗︎</a>}
+            {studio.socials.map((social) => <a href={social.url} target="_blank" rel="noopener noreferrer">{social.label} ↗︎</a>)}
           </div>
         </div>
       </div>

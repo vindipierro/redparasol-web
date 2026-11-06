@@ -11,27 +11,27 @@ const rankedFeatured = sortGamesByCCU(featuredGames);
   <section class="hero">
     <div class="container hero-content">
       <div class="hero-copy">
-        <p class="eyebrow hero-kicker"><span class="eyebrow-star">✳</span> AN INDEPENDENT ROBLOX GAME STUDIO</p>
+        <p class="eyebrow hero-kicker"><span class="eyebrow-star" aria-hidden="true"></span> AN INDEPENDENT ROBLOX GAME STUDIO</p>
         <h1>We Build Worlds.<br/><em>You Write<br class="desktop-break"/> the Story.</em></h1>
         <p class="hero-description">From the everyday to the extraordinary, we craft immersive roleplay worlds and playful simulations that let you make the experience your own.</p>
         <div class="hero-actions">
-          <a class="button button-dark" href="/games/">Explore our games <span aria-hidden="true">↗</span></a>
+          <a class="button button-dark" href="/games/">Explore our games <span class="outbound-arrow" aria-hidden="true"></span></a>
           <span class="hero-side-note">YOUR NEXT STORY<br/>IS WAITING.</span>
         </div>
       </div>
       <HeroScene/>
     </div>
-    <div class="hero-ticker" aria-hidden="true"><div>ROLEPLAY <span>✳</span> SIMULATION <span>✳</span> STORIES <span>✳</span> IMAGINATION <span>✳</span> ROLEPLAY <span>✳</span> SIMULATION <span>✳</span> STORIES <span>✳</span></div></div>
+    <div class="hero-ticker" aria-hidden="true"><div>ROLEPLAY <span class="ticker-star"></span> SIMULATION <span class="ticker-star"></span> STORIES <span class="ticker-star"></span> IMAGINATION <span class="ticker-star"></span> ROLEPLAY <span class="ticker-star"></span> SIMULATION <span class="ticker-star"></span> STORIES <span class="ticker-star"></span></div></div>
   </section>
 
   <section class="section section-dark featured-section" id="featured">
     <div class="container">
       <div class="section-intro">
         <div><p class="eyebrow red-eyebrow">01 / OUR WORLDS</p><h2>Find your next<br/><em>adventure.</em></h2></div>
-        <div class="section-aside"><p>Every world is an invitation. Explore a few of the experiences we've created for players to make their own.</p><a class="text-link" href="/games/">See all {games.length} games <span aria-hidden="true">↗</span></a></div>
+        <div class="section-aside"><p>Every world is an invitation. Explore a few of the experiences we've created for players to make their own.</p><a class="text-link" href="/games/">See all {games.length} games <span class="outbound-arrow" aria-hidden="true"></span></a></div>
       </div>
       <div class="featured-grid">{rankedFeatured.map((game, index) => <GameCard game={game} index={index} featured/>)}</div>
-      <div class="browse-all"><a class="button button-outline" href="/games/">Browse all experiences <span aria-hidden="true">↗</span></a></div>
+      <div class="browse-all"><a class="button button-outline" href="/games/">Browse all experiences <span class="outbound-arrow" aria-hidden="true"></span></a></div>
     </div>
   </section>
 
@@ -47,11 +47,11 @@ const rankedFeatured = sortGamesByCCU(featuredGames);
 
   <section class="section closing-section">
     <div class="container closing-inner">
-      <div class="closing-decoration" aria-hidden="true"><span>✳</span><span>✷</span><span>✳</span></div>
+      <div class="closing-decoration" aria-hidden="true"><span></span><span></span><span></span></div>
       <p class="eyebrow red-eyebrow">03 / THE STUDIO</p>
       <h2>Real worlds are big.<br/><em>Imagined ones are endless.</em></h2>
       <p>{studio.name} is an independent studio building roleplay and simulation experiences on Roblox. We make worlds for curiosity, connection, and the stories that happen between players.</p>
-      <a class="button button-light" href="/about/">Meet the studio <span aria-hidden="true">↗</span></a>
+      <a class="button button-light" href="/about/">Meet the studio <span class="outbound-arrow" aria-hidden="true"></span></a>
     </div>
   </section>
 </BaseLayout>
