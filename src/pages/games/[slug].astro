@@ -32,9 +32,10 @@ const related = games.filter((item) => item.slug !== game.slug && (item.genre ==
       <div class="detail-facts">
         <div><span>Genre</span><strong>{getGenreLabel(game.genre)}</strong></div>
         {visits && <div><span>Lifetime visits</span><strong>{visits}</strong></div>}
+        {game.peakCCU !== null && <div><span>All-time peak CCU</span><strong>{game.peakCCU.toLocaleString('en-US')}</strong></div>}
         {game.releaseYear && <div><span>First released</span><strong>{game.releaseYear}</strong></div>}
       </div>
-      {(!visits || !game.releaseYear) && <p class="detail-data-note">Additional verified release and lifetime visit details will appear here once confirmed.</p>}
+      {(!visits || !game.releaseYear || game.peakCCU === null) && <p class="detail-data-note">Additional verified release and lifetime visit details will appear here once confirmed.</p>}
       {game.robloxUrl && <a class="button button-coral" href={game.robloxUrl} target="_blank" rel="noopener noreferrer">Open experience on Roblox <span aria-hidden="true">↗</span></a>}
       {related.length > 0 && <div class="related-section"><h2>More worlds to explore<span class="title-dot">.</span></h2><div class="related-links">{related.map((item) => <a href={'/games/' + item.slug + '/'}><span>{item.shortTitle ?? item.title}</span><span aria-hidden="true">↗</span></a>)}</div></div>}
     </div>

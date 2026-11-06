@@ -308,3 +308,4 @@ h1 em,h2 em { color: var(--coral); font-style: normal }
 @media (prefers-reduced-motion: reduce) {
   *,*::before,*::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important }
 }
+.game-card-description { margin-top: 9px; font-size: 13px; line-height: 1.65; color: #b2b9c2; max-width: 46ch; }

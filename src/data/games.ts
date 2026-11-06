@@ -12,6 +12,7 @@ export interface Game {
   banner?: string;
   releaseYear: number | null;
   lifetimeVisits: number | null;
+  peakCCU: number | null;
   robloxUrl: string | null;
 }
 
@@ -29,10 +30,11 @@ export const games: Game[] = [
     title: 'Seishun: School Life Roleplay',
     shortTitle: 'Seishun',
     genre: 'school',
-    description: 'Make your own story in a lively school-life roleplay world.',
+    description: 'Explore everyday school life, make friends, and create your own stories in a lively social roleplay world.',
     featured: true,
     releaseYear: null,
     lifetimeVisits: null,
+    peakCCU: null,
     robloxUrl: 'https://www.roblox.com/games/126631821717419/Seishun-School-Life-Roleplay'
   },
   {
@@ -40,10 +42,11 @@ export const games: Game[] = [
     title: 'Oath of Office: Political Simulator',
     shortTitle: 'Oath of Office',
     genre: 'government',
-    description: 'Explore government and public-service roleplay in a player-driven world.',
+    description: 'Step into the world of government and politics, take on public-service roles, and shape the story with other players.',
     featured: true,
     releaseYear: null,
     lifetimeVisits: null,
+    peakCCU: null,
     robloxUrl: 'https://www.roblox.com/games/83895704311875/Oath-of-Office-Political-Roleplay'
   },
   {
@@ -51,10 +54,11 @@ export const games: Game[] = [
     title: 'Silk Road: Trading Simulator',
     shortTitle: 'Silk Road',
     genre: 'trading',
-    description: 'Find your path in a world centered on trading and simulation.',
+    description: 'Trade, find new opportunities, and build your own path in a player-driven trading simulator.',
     featured: true,
     releaseYear: null,
     lifetimeVisits: null,
+    peakCCU: null,
     robloxUrl: 'https://www.roblox.com/games/103073154610301/Silk-Road-Trading-Simulator'
   },
   {
@@ -62,10 +66,11 @@ export const games: Game[] = [
     title: 'Command Authority: Military Roleplay',
     shortTitle: 'Command Authority',
     genre: 'military',
-    description: 'Step into a military roleplay experience built around structure and teamwork.',
+    description: 'Take part in military roleplay built around teamwork, leadership, and structured operations.',
     featured: true,
     releaseYear: null,
     lifetimeVisits: null,
+    peakCCU: null,
     robloxUrl: 'https://www.roblox.com/games/121909225020263/Command-Authority-Military-Roleplay'
   },
   {
@@ -73,9 +78,10 @@ export const games: Game[] = [
     title: 'Kiseki: Rival Academies',
     shortTitle: 'Kiseki',
     genre: 'school',
-    description: 'A social roleplay experience where players make everyday moments their own.',
+    description: 'Enter a world of rival academies, build friendships, and create your own school-life story.',
     releaseYear: null,
     lifetimeVisits: null,
+    peakCCU: null,
     robloxUrl: 'https://www.roblox.com/games/72156617432799/Kiseki'
   },
   {
@@ -84,18 +90,20 @@ export const games: Game[] = [
     shortTitle: 'Line of Fire',
     genre: 'government',
     tags: ['military'],
-    description: 'A security-focused roleplay experience with immersive responsibilities and roles.',
+    description: 'Experience Secret Service roleplay through protective duties, security operations, and teamwork.',
     releaseYear: null,
     lifetimeVisits: null,
+    peakCCU: null,
     robloxUrl: 'https://www.roblox.com/games/127499782145032/Line-of-Fire-Secret-Service-Roleplay'
   },
   {
     slug: 'isekai-trading-simulator',
     title: 'Isekai Trading Simulator',
     genre: 'trading',
-    description: 'Trade your way across a fantasy world, discover new routes, and build a thriving merchant journey.',
+    description: 'Discover a fantasy-inspired trading simulator where each decision opens new opportunities.',
     releaseYear: null,
     lifetimeVisits: null,
+    peakCCU: null,
     robloxUrl: 'https://www.roblox.com/games/93596733187914/Isekai-Trading-Simulator'
   },
   {
@@ -103,9 +111,10 @@ export const games: Game[] = [
     title: 'Moosewood: Camp Roleplay',
     shortTitle: 'Moosewood',
     genre: 'school',
-    description: 'Discover social adventures in a camp-inspired roleplay setting.',
+    description: 'Make memories through camp activities, friendships, and open-ended roleplay at Moosewood.',
     releaseYear: null,
     lifetimeVisits: null,
+    peakCCU: null,
     robloxUrl: 'https://www.roblox.com/games/84326252804702/Moosewood-Camp-Roleplay'
   },
   {
@@ -113,9 +122,10 @@ export const games: Game[] = [
     title: 'Command Authority: Second Strike',
     shortTitle: 'Command Authority: Second Strike',
     genre: 'military',
-    description: 'A further chapter in the Command Authority world.',
+    description: 'Return to the Command Authority universe for a military roleplay experience built around teamwork and action.',
     releaseYear: null,
     lifetimeVisits: null,
+    peakCCU: null,
     robloxUrl: 'https://www.roblox.com/games/122013016126886/Command-Authority-Second-Strike'
   },
   {
@@ -123,18 +133,20 @@ export const games: Game[] = [
     title: 'Marine Academy: Military Roleplay',
     shortTitle: 'Marine Academy',
     genre: 'military',
-    description: 'Learn, train, and roleplay in a military academy setting.',
+    description: 'Train, advance, and take on military roles in an immersive academy setting.',
     releaseYear: null,
     lifetimeVisits: null,
+    peakCCU: null,
     robloxUrl: 'https://www.roblox.com/games/136611085381274/Marine-Academy-Military-Roleplay'
   },
   {
     slug: 'naval-academy',
     title: 'Naval Academy',
     genre: 'military',
-    description: 'A naval academy roleplay experience centered on training and service.',
+    description: 'Experience naval academy life through training, service, and roleplay with other players.',
     releaseYear: null,
     lifetimeVisits: null,
+    peakCCU: null,
     robloxUrl: 'https://www.roblox.com/games/132063414676820/Naval-Academy'
   },
   {
@@ -142,18 +154,20 @@ export const games: Game[] = [
     title: 'Army Bootcamp: Fort Liberty',
     shortTitle: 'Army Bootcamp',
     genre: 'military',
-    description: 'Enlist, complete basic training, and experience military life at Fort Liberty.',
+    description: 'Begin military training at Fort Liberty in a structured bootcamp roleplay experience.',
     releaseYear: null,
     lifetimeVisits: null,
+    peakCCU: null,
     robloxUrl: 'https://www.roblox.com/games/88270740762567/Army-Bootcamp-Fort-Liberty'
   },
   {
     slug: 'clean-a-bloxbuster',
     title: 'Clean a Bloxbuster',
     genre: 'simulation',
-    description: 'Clean up, organize, and keep a movie store running in a playful simulator.',
+    description: 'Bring a movie store back to life by cleaning, organizing tapes, and keeping the shelves stocked.',
     releaseYear: null,
     lifetimeVisits: null,
+    peakCCU: null,
     robloxUrl: 'https://www.roblox.com/games/108909066053989/Clean-a-Bloxbuster'
   }
 ];

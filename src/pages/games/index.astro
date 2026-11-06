@@ -2,6 +2,8 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import GameCard from '../../components/GameCard.astro';
 import { games, genres } from '../../data/games';
+import { sortGamesByCCU } from '../../data/ccu-ranking';
+const rankedGames = sortGamesByCCU(games);
 ---
 <BaseLayout title="Our Games" description="Explore Red Parasol's active Roblox roleplay worlds and simulation games.">
   <section class="page-hero games-page-hero">
@@ -23,7 +25,7 @@ import { games, genres } from '../../data/games';
         {genres.map((genre) => <button class="filter-button" data-filter={genre.id} aria-pressed="false" type="button">{genre.label}</button>)}
       </div>
       <div class="catalog-grid" id="catalog-grid">
-        {games.map((game, index) => <GameCard game={game} index={index}/>)}
+        {rankedGames.map((game, index) => <GameCard game={game} index={index}/>)}
       </div>
       <p class="catalog-footnote">This catalog features currently playable experiences. Studio-wide historical statistics also account for past and reuploaded titles once reconciled.</p>
     </div>

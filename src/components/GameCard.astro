@@ -16,6 +16,7 @@ const artwork = game.artwork ?? (officialArtwork as Record<string, string>)[game
     <div>
       <p class="eyebrow small-eyebrow">{getGenreLabel(game.genre)}</p>
       <h3><a href={'/games/' + game.slug + '/'}>{game.title}</a></h3>
+      <p class="game-card-description">{game.description}</p>
     </div>
     {visits && <span class="visits-pill">{visits} visits</span>}
   </div>

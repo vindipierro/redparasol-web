@@ -67,3 +67,15 @@ The Astro build outputs static files in `dist/`. Deploy to a static hosting prov
 - [ ] Reconcile historical and retired-game totals; set the studio milestone.
 - [ ] Add business email, Roblox group, and approved social URLs.
 - [ ] Configure hosting, domain DNS, social preview image, and analytics if desired.
+
+
+## Automatic CCU-based display order
+
+Both the homepage's four featured experiences and the full 13-game catalog are silently ordered using a recent Roblox current-concurrent-player snapshot. The public site never shows CCU or a popularity label.
+
+- `scripts/sync_ccu_order.py` resolves each verified Place ID to a Universe ID through `https://apis.roblox.com/universes/v1/places/{placeId}/universe`, then reads each game's `playing` value using a single batch request to `https://games.roblox.com/v1/games?universeIds=...`.
+- `.github/workflows/sync-ccu-order.yml` runs at 17 minutes past every third hour, on manual dispatch, and after updates to its source. This is a periodic snapshot, **not real-time data**.
+- The script writes only the ordered slugs to `src/data/ccu-order.json`. CCU numbers are not published. Ties preserve the catalog's configured order.
+- Invalid, incomplete, or unavailable Roblox API responses fail the job and preserve the last valid ordering. Before the first successful synchronization, the original curated order is used.
+- Any change to the order is committed to `main`, allowing static hosts with GitHub integration to rebuild automatically.
+- Current CCU is **not** all-time peak CCU. Historical peak CCU, reconciled lifetime visits, and original release year are manually supplied per game in `src/data/games.ts`.

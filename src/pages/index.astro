@@ -3,8 +3,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroScene from '../components/HeroScene.astro';
 import GameCard from '../components/GameCard.astro';
 import { featuredGames, games, formatMilestone } from '../data/games';
+import { sortGamesByCCU } from '../data/ccu-ranking';
 import { studio, historicStudioMilestone } from '../data/studio';
 const milestone = formatMilestone(historicStudioMilestone);
+const rankedFeatured = sortGamesByCCU(featuredGames);
 ---
 <BaseLayout>
   <section class="hero">
@@ -29,7 +31,7 @@ const milestone = formatMilestone(historicStudioMilestone);
         <div><p class="eyebrow red-eyebrow">01 / OUR WORLDS</p><h2>Find your next<br/><em>adventure.</em></h2></div>
         <div class="section-aside"><p>Every world is an invitation. Explore a few of the experiences we've created for players to make their own.</p><a class="text-link" href="/games/">See all {games.length} games <span aria-hidden="true">↗</span></a></div>
       </div>
-      <div class="featured-grid">{featuredGames.map((game, index) => <GameCard game={game} index={index} featured/>)}</div>
+      <div class="featured-grid">{rankedFeatured.map((game, index) => <GameCard game={game} index={index} featured/>)}</div>
       <div class="browse-all"><a class="button button-outline" href="/games/">Browse all experiences <span aria-hidden="true">↗</span></a></div>
     </div>
   </section>
