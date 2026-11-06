@@ -33,7 +33,7 @@ const related = games.filter((item) => item.slug !== game.slug && (item.genre ==
         <div><span>Genre</span><strong>{getGenreLabel(game.genre)}</strong></div>
         {visits && <div><span>Lifetime visits</span><strong>{visits}</strong></div>}
         {game.peakCCU !== null && <div><span>Recorded peak CCU</span><strong>{game.peakCCUApproximate ? '≈' : ''}{game.peakCCU.toLocaleString('en-US')}</strong></div>}
-        {game.releaseYear && <div><span>First released</span><strong>{game.releaseYear}</strong></div>}
+        {game.releaseYear && <div><span>Earliest known release</span><strong>{game.releaseYear}</strong></div>}
       </div>
       {(game.peakCCU === null) && <p class="detail-data-note">Additional verified historical peak CCU details will appear here when available.</p>}
       {game.robloxUrl && <a class="button button-coral" href={game.robloxUrl} target="_blank" rel="noopener noreferrer">Open experience on Roblox <span aria-hidden="true">↗</span></a>}
