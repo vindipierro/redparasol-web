@@ -257,8 +257,9 @@ h1 em,h2 em { color: var(--coral); font-style: normal }
   .hero-actions .button { max-width: 100% }
   .hero-side-note { display: none }
   .hero-side-note { font-size: 9px }
-  .hero-art { position: relative; width: min(100%, 490px); flex: none; height: clamp(330px, 102vw, 440px); margin: 24px auto 0; right: auto; bottom: auto; opacity: 1 }
-  .hero-mascot { width: 75%; right: 10%; bottom: -5px }
+  .hero-copy { z-index: 2 }
+  .hero-art { position: relative; z-index: 1; isolation: isolate; overflow: hidden; display: grid; align-items: end; justify-items: center; width: min(100%, 490px); flex: none; height: clamp(370px, 108vw, 470px); margin: 72px auto 0; right: auto; bottom: auto; opacity: 1 }
+  .hero-mascot { position: relative; width: min(80%, 370px); max-height: 100%; height: auto; right: auto; bottom: auto; margin: 0 auto; align-self: end }
   .sun-disk { width: min(75vw, 330px); height: auto; aspect-ratio: 1; right: 5%; top: 1% }
   .hero-art-caption { bottom: 26px; font-size: 9px; right: 10% }
   .hill { height: 250px }
@@ -324,7 +325,7 @@ h1 em,h2 em { color: var(--coral); font-style: normal }
   .hero-content { min-height: 0 }
   .hero h1 { font-size: clamp(33px, 10vw, 39px) }
   .hero-side-note { display: none }
-  .hero-art { height: 340px }
+  .hero-art { height: 360px; margin-top: 60px }
   .brand { font-size: 12px }
 }
 @media (prefers-reduced-motion: reduce) {
