@@ -1,5 +1,5 @@
 {
-  "retrievedAt": "2026-11-06T01:16:16.591640+00:00",
+  "retrievedAt": "2026-11-06T01:23:24.785826+00:00",
   "source": "https://games.roblox.com/v1/games?universeIds=...",
   "warning": "Public snapshot. knownVisitSum covers listed releases only; not an exhaustive studio history. CCU is an instantaneous sample, not an all-time peak. Group lists are candidates, NOT attribution.",
   "current": [
@@ -10,8 +10,8 @@
       "groupEra": "",
       "metadataAvailable": true,
       "name": "[🎃] Seishun: School Life Roleplay",
-      "visits": 11282963,
-      "playing": 304,
+      "visits": 11283045,
+      "playing": 303,
       "creator": {
         "id": 741366225,
         "name": "TsukimiSoft",
@@ -32,8 +32,8 @@
       "groupEra": "",
       "metadataAvailable": true,
       "name": "Oath of Office: Political Roleplay",
-      "visits": 1593469,
-      "playing": 217,
+      "visits": 1593536,
+      "playing": 223,
       "creator": {
         "id": 706873563,
         "name": "Liberty Bell",
@@ -54,8 +54,8 @@
       "groupEra": "",
       "metadataAvailable": true,
       "name": "🗺️ [MAP] Silk Road: Trading Simulator",
-      "visits": 4441710,
-      "playing": 108,
+      "visits": 4441733,
+      "playing": 110,
       "creator": {
         "id": 624453376,
         "name": "Ancient Pathways",
@@ -76,8 +76,8 @@
       "groupEra": "",
       "metadataAvailable": true,
       "name": "Command Authority: Military Roleplay",
-      "visits": 2394668,
-      "playing": 84,
+      "visits": 2394700,
+      "playing": 80,
       "creator": {
         "id": 578103619,
         "name": "Blue Canopy",
@@ -98,7 +98,7 @@
       "groupEra": "",
       "metadataAvailable": true,
       "name": "Kiseki!",
-      "visits": 2398,
+      "visits": 2400,
       "playing": 0,
       "creator": {
         "id": 741366225,
@@ -120,8 +120,8 @@
       "groupEra": "",
       "metadataAvailable": true,
       "name": "Line of Fire: Secret Service Roleplay",
-      "visits": 4000265,
-      "playing": 3,
+      "visits": 4000267,
+      "playing": 0,
       "creator": {
         "id": 17005184,
         "name": "Chesapeake Studios",
@@ -186,7 +186,7 @@
       "groupEra": "",
       "metadataAvailable": true,
       "name": "Command Authority: Second Strike",
-      "visits": 15123,
+      "visits": 15129,
       "playing": 6,
       "creator": {
         "id": 578103619,
@@ -208,8 +208,8 @@
       "groupEra": "",
       "metadataAvailable": true,
       "name": "🪖[ARMORY] Marine Academy: Military Roleplay",
-      "visits": 5103915,
-      "playing": 130,
+      "visits": 5104049,
+      "playing": 121,
       "creator": {
         "id": 578103619,
         "name": "Blue Canopy",
@@ -408,7 +408,7 @@
       "groupEra": "Reef Points Army Academy original",
       "metadataAvailable": true,
       "name": "Army Academy: Military Roleplay",
-      "visits": 972727,
+      "visits": 972728,
       "playing": 0,
       "creator": {
         "id": 10922050,
@@ -424,6 +424,74 @@
       "robloxUrl": "https://www.roblox.com/games/135329589664705/"
     }
   ],
+  "retired": [
+    {
+      "slug": "port-of-entry",
+      "placeId": 130949000912906,
+      "universeId": 7324714301,
+      "groupEra": "Chesapeake Archive / originally Chesapeake Studios",
+      "metadataAvailable": true,
+      "name": "Port of Entry: Border Roleplay",
+      "visits": 3156946,
+      "playing": 0,
+      "creator": {
+        "id": 34779126,
+        "name": "Chesapeake Archive",
+        "type": "Group",
+        "isRNVAccount": false,
+        "hasVerifiedBadge": false
+      },
+      "created": "2025-03-03T17:02:38.797Z",
+      "updated": "2025-12-28T19:16:17.403Z",
+      "description": "🗽 Port of Entry is a border roleplay game set on the Rio Grande between the United States and Mexico.\n\n🚨 Please note that this is a PUBLIC roleplay game; you don't have to join a group to unlock roles or become a Border Officer! Just cross the border as a U.S. citizen, and you'll be able to select a role from the \"Change Role\" button on the top right of your screen!\n\n🛂 As a CBP Officer, approve or deny passports to let people into the country, or keep them out! Rise through the ranks until you're the Port Director!\n\n💥 Cross the border as a Mexican to earn cash, which you can spend on weapons to raid the border!\n\n🚨 Rules: https://devforum.roblox.com/t/chesapeake-entertainment-rules-info/3880016\n\nVC Server: https://www.roblox.com/games/132344881401059/PoE-VC\n\n© 2025 Chesapeake International Entertainment S.A.",
+      "rootPlaceId": 130949000912906,
+      "robloxUrl": "https://www.roblox.com/games/130949000912906/"
+    },
+    {
+      "slug": "the-foundation",
+      "placeId": 90503149907738,
+      "universeId": 8967792558,
+      "groupEra": "Chesapeake Archive / originally Chesapeake Studios",
+      "metadataAvailable": true,
+      "name": "The Foundation: SCP Roleplay",
+      "visits": 111602,
+      "playing": 0,
+      "creator": {
+        "id": 34779126,
+        "name": "Chesapeake Archive",
+        "type": "Group",
+        "isRNVAccount": false,
+        "hasVerifiedBadge": false
+      },
+      "created": "2025-10-17T20:43:01.087Z",
+      "updated": "2025-12-28T19:16:37.583Z",
+      "description": "🧪 The Foundation is a secretive organization dedicated to securing and containing different anomalies across the globe - all to protect humanity.\n\n🔬 As a Scientist, conduct tests to determine the true nature of each mysterious object.\n\n🛡️ As Security, control test subjects and protect the Site from threats.\n\nServers: https://www.roblox.com/games/122539297476466/The-Foundation-Roleplay-Server\n\n🚨 Rules: https://devforum.roblox.com/t/chesapeake-entertainment-rules-info/3880016\n\nContent relating to the SCP Foundation, including the SCP Foundation logo, is licensed under Creative Commons Sharealike 3.0 and all concepts originate from the SCP wiki and its authors. Assets derived from this content, including anomalies, artwork, and in-game research text, is hereby also released under Creative Commons Sharealike 3.0. Core game framework is © 2024-2025 Chesapeake International Entertainment S.A.",
+      "rootPlaceId": 90503149907738,
+      "robloxUrl": "https://www.roblox.com/games/90503149907738/"
+    },
+    {
+      "slug": "white-house-roleplay",
+      "placeId": 96875176477583,
+      "universeId": 6490357754,
+      "groupEra": "Chesapeake Archive / originally Chesapeake Studios",
+      "metadataAvailable": true,
+      "name": "White House Roleplay",
+      "visits": 1026996,
+      "playing": 0,
+      "creator": {
+        "id": 34779126,
+        "name": "Chesapeake Archive",
+        "type": "Group",
+        "isRNVAccount": false,
+        "hasVerifiedBadge": false
+      },
+      "created": "2024-08-30T20:51:16.75Z",
+      "updated": "2025-12-28T19:15:57.213Z",
+      "description": "🚨 PRESIDENT is now FREE for all users! So is Vice President and all Cabinet Secretary roles!\n\n🏛️ Enter the Halls of Power: Step inside the most iconic building in the world. Decisions made here can change everything—what will yours be?\n\n💼 Lead and Influence: Take on roles of influence and shape the course of events. Your choices will ripple across history, but what kind of leader will you become?\n\n👥 Collaborate or Compete: Work with or against others in a dynamic world of power and politics. Everyone has an agenda—will yours prevail?",
+      "rootPlaceId": 96875176477583,
+      "robloxUrl": "https://www.roblox.com/games/96875176477583/"
+    }
+  ],
   "byGame": {
     "seishun": {
       "knownReleases": [
@@ -431,7 +499,7 @@
           "kind": "current",
           "placeId": 126631821717419,
           "universeId": 10061511956,
-          "visits": 11282963,
+          "visits": 11283045,
           "creator": "TsukimiSoft"
         },
         {
@@ -442,7 +510,7 @@
           "creator": "HanamiSoft"
         }
       ],
-      "knownVisitSum": 24483085,
+      "knownVisitSum": 24483167,
       "complete": true
     },
     "oath-of-office": {
@@ -451,7 +519,7 @@
           "kind": "current",
           "placeId": 83895704311875,
           "universeId": 10151528938,
-          "visits": 1593469,
+          "visits": 1593536,
           "creator": "Liberty Bell"
         },
         {
@@ -462,7 +530,7 @@
           "creator": "Chesapeake Studios"
         }
       ],
-      "knownVisitSum": 21785124,
+      "knownVisitSum": 21785191,
       "complete": true
     },
     "silk-road": {
@@ -471,11 +539,11 @@
           "kind": "current",
           "placeId": 103073154610301,
           "universeId": 9718589349,
-          "visits": 4441710,
+          "visits": 4441733,
           "creator": "Ancient Pathways"
         }
       ],
-      "knownVisitSum": 4441710,
+      "knownVisitSum": 4441733,
       "complete": true
     },
     "command-authority": {
@@ -484,7 +552,7 @@
           "kind": "current",
           "placeId": 121909225020263,
           "universeId": 10123283304,
-          "visits": 2394668,
+          "visits": 2394700,
           "creator": "Blue Canopy"
         },
         {
@@ -495,7 +563,7 @@
           "creator": "Chesapeake Studios"
         }
       ],
-      "knownVisitSum": 12213408,
+      "knownVisitSum": 12213440,
       "complete": true
     },
     "kiseki": {
@@ -504,7 +572,7 @@
           "kind": "current",
           "placeId": 72156617432799,
           "universeId": 10398723548,
-          "visits": 2398,
+          "visits": 2400,
           "creator": "TsukimiSoft"
         },
         {
@@ -515,7 +583,7 @@
           "creator": "Red Parasol Games"
         }
       ],
-      "knownVisitSum": 169741,
+      "knownVisitSum": 169743,
       "complete": true
     },
     "line-of-fire": {
@@ -524,11 +592,11 @@
           "kind": "current",
           "placeId": 127499782145032,
           "universeId": 8062101952,
-          "visits": 4000265,
+          "visits": 4000267,
           "creator": "Chesapeake Studios"
         }
       ],
-      "knownVisitSum": 4000265,
+      "knownVisitSum": 4000267,
       "complete": true
     },
     "isekai-trading-simulator": {
@@ -563,11 +631,11 @@
           "kind": "current",
           "placeId": 122013016126886,
           "universeId": 10773559311,
-          "visits": 15123,
+          "visits": 15129,
           "creator": "Blue Canopy"
         }
       ],
-      "knownVisitSum": 15123,
+      "knownVisitSum": 15129,
       "complete": true
     },
     "marine-academy": {
@@ -576,7 +644,7 @@
           "kind": "current",
           "placeId": 136611085381274,
           "universeId": 10037019232,
-          "visits": 5103915,
+          "visits": 5104049,
           "creator": "Blue Canopy"
         },
         {
@@ -587,7 +655,7 @@
           "creator": "Reef Points"
         }
       ],
-      "knownVisitSum": 12194077,
+      "knownVisitSum": 12194211,
       "complete": true
     },
     "naval-academy": {
@@ -616,11 +684,11 @@
           "kind": "legacy",
           "placeId": 135329589664705,
           "universeId": 9060117723,
-          "visits": 972727,
+          "visits": 972728,
           "creator": "Reef Points"
         }
       ],
-      "knownVisitSum": 1282903,
+      "knownVisitSum": 1282904,
       "complete": true
     },
     "clean-a-bloxbuster": {
@@ -634,6 +702,45 @@
         }
       ],
       "knownVisitSum": 19717,
+      "complete": true
+    },
+    "port-of-entry": {
+      "knownReleases": [
+        {
+          "kind": "retired",
+          "placeId": 130949000912906,
+          "universeId": 7324714301,
+          "visits": 3156946,
+          "creator": "Chesapeake Archive"
+        }
+      ],
+      "knownVisitSum": 3156946,
+      "complete": true
+    },
+    "the-foundation": {
+      "knownReleases": [
+        {
+          "kind": "retired",
+          "placeId": 90503149907738,
+          "universeId": 8967792558,
+          "visits": 111602,
+          "creator": "Chesapeake Archive"
+        }
+      ],
+      "knownVisitSum": 111602,
+      "complete": true
+    },
+    "white-house-roleplay": {
+      "knownReleases": [
+        {
+          "kind": "retired",
+          "placeId": 96875176477583,
+          "universeId": 6490357754,
+          "visits": 1026996,
+          "creator": "Chesapeake Archive"
+        }
+      ],
+      "knownVisitSum": 1026996,
       "complete": true
     }
   },
@@ -651,7 +758,7 @@
         {
           "universeId": 9060117723,
           "name": "Army Academy: Military Roleplay",
-          "visits": 972727,
+          "visits": 972728,
           "rootPlaceId": 135329589664705,
           "description": "📢 FALL IN!\n\n🪖 Army Academy is a military roleplay game where you can attend Boot Camp to become a Soldier! Progress your career by hosting trainings, attending tryouts, and work your way up to become General of the Army!\n\n⏰ In-game ranks DO NOT save, as each server has its own command and leadership. However, your trainings and qualifications save for 5 days - play weekly to re-certify!\n\n🚨 Rules: https://devforum.roblox.com/t/chesapeake-entertainment-rules-info/3880016\n\n© 2024-2025 Chesapeake International Entertainment S.A."
         }
@@ -685,7 +792,7 @@
         {
           "universeId": 8062101952,
           "name": "Line of Fire: Secret Service Roleplay",
-          "visits": 4000265,
+          "visits": 4000267,
           "rootPlaceId": 127499782145032,
           "description": "🕶️ Line of Fire is a Secret Service and White House roleplay game set in Washington, D.C. Protect the President, patrol the grounds, and respond to threats in one of the most high-risk jobs in the nation.\n\n🏛️ As a Secret Service member, protect the White House - or the President. Arrest criminals and earn XP to unlock new units. ALL roles in the game will eventually rank up to President - no purchase necessary.\n\n✨ As a Civilian, have positive roleplay (be arrested, complete a jail term) to earn Karma. Use Karma to unlock roles like Journalist so you can enter the White House legally - or buy a weapon to get in the hard way.\n\n⚠️ Server Browser: https://www.roblox.com/games/104696013456147/LoF\n\n🚨 Rules: https://devforum.roblox.com/t/chesapeake-entertainment-rules-info/3880016\n\n© 2025 Chesape"
         },
@@ -698,6 +805,61 @@
         }
       ],
       "count": 5
+    },
+    "34779126": {
+      "groupName": "Chesapeake Archive",
+      "games": [
+        {
+          "universeId": 6409716542,
+          "name": "Oath of Office: The Philippines",
+          "visits": 805901,
+          "rootPlaceId": 18924296207,
+          "description": "🇵🇭 From Malacañang to Camp Aguinaldo, Oath of Office: Philippines is a politics simulation game that places you at the helm of the Philippine government. You’ll make crucial decisions that influence the nation's direction and your political legacy!\n\n🐦 Start as an Undersecretary in one of the government departments. By making decisions on important national matters and giving sound advice to your Secretary, you’ll build fame and strengthen ties with different political factions. Use this influence to secure an appointment as a Secretary, working directly under the President!\n\n🗳️ As your fame grows, you can even run for President of the Philippines! Presidential elections take place every six in-game days, with your victory depending on your reputation and support from key interest groups."
+        },
+        {
+          "universeId": 6490357754,
+          "name": "White House Roleplay",
+          "visits": 1026996,
+          "rootPlaceId": 96875176477583,
+          "description": "🚨 PRESIDENT is now FREE for all users! So is Vice President and all Cabinet Secretary roles!\n\n🏛️ Enter the Halls of Power: Step inside the most iconic building in the world. Decisions made here can change everything—what will yours be?\n\n💼 Lead and Influence: Take on roles of influence and shape the course of events. Your choices will ripple across history, but what kind of leader will you become?\n\n👥 Collaborate or Compete: Work with or against others in a dynamic world of power and politics. Everyone has an agenda—will yours prevail?"
+        },
+        {
+          "universeId": 6548822577,
+          "name": "Oath of Office: Brazil",
+          "visits": 14811,
+          "rootPlaceId": 70887751835501,
+          "description": "🇧🇷 From the Palácio do Planalto to the Streets of Brasília, Oath of Office: Brazil is a political simulation game that puts you at the helm of the Brazilian government. Make crucial decisions that influence the nation's future and shape your political legacy!\n\n🌱 Start as a civil servant in one of the government ministries. By making decisions on important national matters and giving sound advice to your Minister, you’ll build reputation and strengthen ties with different political factions. Use this influence to secure an appointment as a Minister, working directly under the President!\n\n🎯 As your reputation grows, you can even run for President of Brazil! Presidential elections take place every four in-game days, and your victory will depend on your reputation and support from key interest"
+        },
+        {
+          "universeId": 7034683697,
+          "name": "Election Simulator [🤝GTV Partnership🤝]",
+          "visits": 126977,
+          "rootPlaceId": 138882558149118,
+          "description": "🚨Referencing real world parties is against the Roblox ToS and our game rules. You will be banned for referencing real-world politics.🚨\n\n🏆 500 Likes For Next Major Update 🏆\n\nWelcome to Unnamed Election Game, a ROBLOX simulation game where you get to lead your own party and simulate an election in ROBLOX against other players. Carefully pick your party policies, go onto media interviews, and respond to ongoing national events in order to succesfully win your way to the ROBLOX white house!\n\n🛠  Version 1.8.9 [New Gamemode] 🛠\n\n📝 Information: 📝\n- To Have A Debate You Must Be in a Multiplayer Match\n\n🎮 Latest Features: 🎮\n- NEW: 'Realistic' Gamemode\n- NEW: AI Difficulties\n- Pollster Recruitable\n- Player Debates\n- Private Server Console\n\n🩹 Latest Patches: 🩹\n- Added 'Realistic Gamemode' (States have "
+        },
+        {
+          "universeId": 7287841117,
+          "name": "Executive Orders: Legacy",
+          "visits": 12008,
+          "rootPlaceId": 117183744684585,
+          "description": "🚨 This is the \"Legacy\" edition of Oath of Office/Executive Orders. For a much newer and more complete version of the game, visit Oath of Office: https://www.roblox.com/games/110814051639689/Oath-of-Office-Political-Simulator"
+        },
+        {
+          "universeId": 7324714301,
+          "name": "Port of Entry: Border Roleplay",
+          "visits": 3156946,
+          "rootPlaceId": 130949000912906,
+          "description": "🗽 Port of Entry is a border roleplay game set on the Rio Grande between the United States and Mexico.\n\n🚨 Please note that this is a PUBLIC roleplay game; you don't have to join a group to unlock roles or become a Border Officer! Just cross the border as a U.S. citizen, and you'll be able to select a role from the \"Change Role\" button on the top right of your screen!\n\n🛂 As a CBP Officer, approve or deny passports to let people into the country, or keep them out! Rise through the ranks until you're the Port Director!\n\n💥 Cross the border as a Mexican to earn cash, which you can spend on weapons to raid the border!\n\n🚨 Rules: https://devforum.roblox.com/t/chesapeake-entertainment-rules-info/3880016\n\nVC Server: https://www.roblox.com/games/132344881401059/PoE-VC\n\n© 2025 Chesapeake International "
+        },
+        {
+          "universeId": 8967792558,
+          "name": "The Foundation: SCP Roleplay",
+          "visits": 111602,
+          "rootPlaceId": 90503149907738,
+          "description": "🧪 The Foundation is a secretive organization dedicated to securing and containing different anomalies across the globe - all to protect humanity.\n\n🔬 As a Scientist, conduct tests to determine the true nature of each mysterious object.\n\n🛡️ As Security, control test subjects and protect the Site from threats.\n\nServers: https://www.roblox.com/games/122539297476466/The-Foundation-Roleplay-Server\n\n🚨 Rules: https://devforum.roblox.com/t/chesapeake-entertainment-rules-info/3880016\n\nContent relating to the SCP Foundation, including the SCP Foundation logo, is licensed under Creative Commons Sharealike 3.0 and all concepts originate from the SCP wiki and its authors. Assets derived from this content, including anomalies, artwork, and in-game research text, is hereby also released under Creative Com"
+        }
+      ],
+      "count": 7
     },
     "35475452": {
       "groupName": "HanamiSoft",
@@ -718,14 +880,14 @@
         {
           "universeId": 10037019232,
           "name": "🪖[ARMORY] Marine Academy: Military Roleplay",
-          "visits": 5103915,
+          "visits": 5104049,
           "rootPlaceId": 136611085381274,
           "description": "NEW TRAINING AND DEPLOYMENT AT 10K LIKES!!\n\n📢 GET ON LINE!\n\n⚓ Marine Academy is a military roleplay game where you can attend Recruit Training to become a Marine! Progress your career by hosting trainings, attending tryouts, and work your way up to Commandant of the Marine Corps!\n\n⏰ Training expires after 48 hours! Log in frequently to progress your career."
         },
         {
           "universeId": 10123283304,
           "name": "Command Authority: Military Roleplay",
-          "visits": 2394668,
+          "visits": 2394700,
           "rootPlaceId": 121909225020263,
           "description": "This game has been moved. IF YOU ARE JOINING FROM THE OLD GAME, YOU STILL HAVE YOUR DATA AND GAMEPASSES!\n\n🪖 Command Authority is a military simulation and roleplay game. Players hold a role in the United States Armed Forces, and deploy on operations in Africa.\n\n⚔️ This is a ROLEPLAY-focused game, not a shooter. Weapon damage is LOW to give players time to communicate and move around under fire. This won't be enjoyable for all players.\n\n💀 This game has permadeath! When you die (or leave), someone else in the server claims your role - it won't be there when you come back.\n\n🎖️ Users are promoted automatically when roles above open up. Climb the ranks to become a Platoon Sergeant, Company Commander, or even the General!\n\n🚨 Rules: https://devforum.roblox.com/t/red-parasol-rules-information/4589"
         },
@@ -753,7 +915,7 @@
         {
           "universeId": 10773559311,
           "name": "Command Authority: Second Strike",
-          "visits": 15123,
+          "visits": 15129,
           "rootPlaceId": 122013016126886,
           "description": "🪖 Command Authority: Second Strike is a military simulation and roleplay game. Players hold a role in the United States Armed Forces, and deploy on operations in Eastern Europe.\n\n⚔️ This is a ROLEPLAY-focused game, not a shooter. Weapon damage is LOW to give players time to communicate and move around under fire. This won't be enjoyable for all players.\n\n💀 This game has permadeath! When you die (or leave), someone else in the server claims your role - it won't be there when you come back.\n\n🎖️ Users are promoted automatically when roles above open up. Climb the ranks to become a Platoon Sergeant, Company Commander, or even the Captain!!\n\n🚨 Rules: https://devforum.roblox.com/t/red-parasol-rules-information/4589819\n\nOriginal soundtrack by Nicolas Baquero\nCombat UGC supported in-part by Λstray"
         }
@@ -766,7 +928,7 @@
         {
           "universeId": 9718589349,
           "name": "🗺️ [MAP] Silk Road: Trading Simulator",
-          "visits": 4441710,
+          "visits": 4441733,
           "rootPlaceId": 103073154610301,
           "description": "👍 USE CODE \"15KLIKES\" FOR A FREE HAT!\n🎉 JERUSALEM AT 30K LIKES!!\n\n📜 Travel the Silk Road around the year 650!\n\n🏛️ Trade between the great powers of the ancient world: the Byzantine Empire, Sasanian Empire, and Sogdian city-states!\n\n🕌 Cross towering mountain passes, and journey through deserts, cities, and distant lands!\n\n🐪 Buy low, sell high, and travel thousands of miles as you build your fortune!\n\n👑 Start with a single step and become the greatest merchant on the Silk Road!"
         },
@@ -786,7 +948,7 @@
         {
           "universeId": 10151528938,
           "name": "Oath of Office: Political Roleplay",
-          "visits": 1593469,
+          "visits": 1593536,
           "rootPlaceId": 83895704311875,
           "description": "This game has been moved. IF YOU ARE JOINING FROM THE OLD GAME,  YOU STILL HAVE YOUR DATA!\n🚨 HEADS UP: In order to play, make sure to turn on experience chat! \n\n🗽 From the White House to the Pentagon, Oath of Office™ is a politics simulation and roleplay game which places you at the top of the U.S. government. As a member of Congress or the Executive Branch, vote on laws or make decisions on issues that impact the nation - and your polls.\n\n🏛️ CONGRESS: Join the House of Representatives to propose and vote on laws. Elect your leadership and Speaker of the House.\n\n🦅 EXECUTIVE BRANCH: Attend meetings and make decisions on issues as an Assistant Secretary at an executive department. \n\n🧑‍⚖ JUDICIAL BRANCH: As a Federal Prosecutor or attorney, argue cases in front of federal judges or the Suprem"
         }
@@ -799,14 +961,14 @@
         {
           "universeId": 10061511956,
           "name": "[🎃] Seishun: School Life Roleplay",
-          "visits": 11282963,
+          "visits": 11283045,
           "rootPlaceId": 126631821717419,
           "description": "👍 FREE ARCHETYPE at 25k Likes!\n\n🚨 REPORTS: If you experience any rule-breaking behavior, report it to Roblox, and to our mods by opening a ticket on our linked social server. Our typical response time is under 5 minutes.\n\n🌸 Seishun: School Life Roleplay is a game where you can attend classes, join clubs, make friends, and explore beyond the school gates.\n\n🪙 Gain free Yen at the end of every in-game day, and free Sakura every 20 hours when you play for at least 10 minutes!\n\n🚨 Rules: https://devforum.roblox.com/t/red-parasol-rules-information/4589819"
         },
         {
           "universeId": 10398723548,
           "name": "Kiseki!",
-          "visits": 2398,
+          "visits": 2400,
           "rootPlaceId": 72156617432799,
           "description": "🎓 Welcome to Kiseki!\n\nCampus life comes with a little rivalry. Join one of two rival universities in an anime-inspired town, where friendships can turn into rivalries and an ordinary school day can end in a fight.\n\n👊 TAKE ON YOUR RIVALS\nThrow hands and show off your fighting style. Whether you’re standing up for a friend or settling a personal rivalry, campus life isn’t always peaceful.\n\n🌸 FIND YOUR PEOPLE\nMeet new friends, hang out around town, and create your own stories together.\n\n👕 MAKE YOUR CHARACTER YOUR OWN\nCustomize your look and bring your character to life.\n\nWill you keep the peace or stir things up?\n\n👍 Enjoying Kiseki? Like and favorite the game!\n💬 Check our social links for community news and updates.\n🚨 Report rule-breaking through Roblox and contact our moderators through the "
         }
