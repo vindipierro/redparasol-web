@@ -2,10 +2,9 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroScene from '../components/HeroScene.astro';
 import GameCard from '../components/GameCard.astro';
-import { featuredGames, games, formatMilestone } from '../data/games';
+import { featuredGames, games } from '../data/games';
 import { sortGamesByCCU } from '../data/ccu-ranking';
-import { studio, historicStudioMilestone } from '../data/studio';
-const milestone = formatMilestone(historicStudioMilestone);
+import { studio, homepageLifetimeVisitsLabel } from '../data/studio';
 const rankedFeatured = sortGamesByCCU(featuredGames);
 ---
 <BaseLayout>
@@ -41,7 +40,7 @@ const rankedFeatured = sortGamesByCCU(featuredGames);
       <div><p class="eyebrow">02 / THE BIG PICTURE</p><h2>Built with<br/><em>possibility.</em></h2><p>Some worlds are for exploring. Others are for belonging. We believe the best experiences give players room to make something of their own.</p></div>
       <div class="numbers-grid">
         <div class="number-tile tile-red"><strong>{games.length}</strong><span>Playable experiences</span></div>
-        <div class="number-tile tile-cream"><strong>{milestone ?? '2024'}</strong><span>{milestone ? 'Documented lifetime visits' : 'Founded'}</span></div>
+        <div class="number-tile tile-cream"><strong>{homepageLifetimeVisitsLabel}</strong><span>Lifetime visits</span></div>
       </div>
     </div>
   </section>

@@ -23,6 +23,9 @@ export const studio = {
  * - Only update this lower bound upward with independently verified nonoverlapping releases.
  */
 export const historicStudioMilestone: number | null = 88444580;
+
+// Studio-provided estimate for the public homepage. Separate from the audited historical subtotal.
+export const homepageLifetimeVisitsLabel = '100M+';
 export const retiredTitlesLedger: { title: string; reconciledLifetimeVisits: number | null; notes: string }[] = [
   { title: "His Majesty's Government", reconciledLifetimeVisits: 1688318, notes: "Chesapeake Studios public Roblox group games list" },
   { title: "Red Storm: Military Roleplay", reconciledLifetimeVisits: 259952, notes: "Chesapeake Studios public Roblox group games list" },
