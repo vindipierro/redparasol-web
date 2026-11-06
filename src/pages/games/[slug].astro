@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { games, formatMilestone, getGenreLabel, type Game } from '../../data/games';
+import { games, formatMilestone, formatPeakCCU, formatReleaseMonth, getGenreLabel, type Game } from '../../data/games';
 import officialArtwork from '../../data/game-thumbnails.json';
 export function getStaticPaths() {
   return games.map((game) => ({ params: { slug: game.slug }, props: { game } }));
@@ -8,6 +8,9 @@ export function getStaticPaths() {
 interface Props { game: Game }
 const { game } = Astro.props;
 const visits = formatMilestone(game.lifetimeVisits);
+const displayedPeak = formatPeakCCU(game.peakCCU, game.slug === 'seishun');
+const release = formatReleaseMonth(game.releaseMonth, game.releaseYear);
+const factCount = 1 + Number(Boolean(visits)) + Number(Boolean(displayedPeak)) + Number(Boolean(release));
 const banner = game.banner ?? (officialArtwork as Record<string, string>)[game.slug];
 const related = games.filter((item) => item.slug !== game.slug && (item.genre === game.genre || (item.tags ?? []).includes(game.genre))).slice(0, 3);
 ---
@@ -29,11 +32,11 @@ const related = games.filter((item) => item.slug !== game.slug && (item.genre ==
   <section class="section section-dark detail-body">
     <div class="container">
       <p class="eyebrow red-eyebrow">THE EXPERIENCE</p>
-      <div class="detail-facts">
+      <div class="detail-facts" data-count={factCount} style={`--fact-count: ${factCount}`}>
         <div><span>Genre</span><strong>{getGenreLabel(game.genre)}</strong></div>
         {visits && <div><span>Lifetime visits</span><strong>{visits}</strong></div>}
-        {game.peakCCU !== null && <div><span>Recorded peak CCU</span><strong>{game.peakCCUApproximate ? '≈' : ''}{game.peakCCU.toLocaleString('en-US')}</strong></div>}
-        {game.releaseYear && <div><span>Earliest known release</span><strong>{game.releaseYear}</strong></div>}
+        {displayedPeak && <div><span>Peak CCU</span><strong>{displayedPeak}</strong></div>}
+        {release && <div><span>Release</span><strong>{release}</strong></div>}
       </div>
       {(game.peakCCU === null) && <p class="detail-data-note">Additional verified historical peak CCU details will appear here when available.</p>}
       {game.robloxUrl && <a class="button button-coral" href={game.robloxUrl} target="_blank" rel="noopener noreferrer">Open experience on Roblox <span aria-hidden="true">↗</span></a>}

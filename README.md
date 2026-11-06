@@ -96,3 +96,10 @@ Both the homepage's four featured experiences and the full 13-game catalog are s
 - Per-game and studio-wide visit figures reflect known uploads, not unique players or an exhaustive guarantee of every historical release.
 - Studio total includes identified active game histories plus Port of Entry, White House Roleplay, The Foundation, His Majesty's Government, and Red Storm. Other candidates under Chesapeake Archive are not automatically included until their association is confirmed.
 - Publicly tracked peaks are not necessarily a true historical maximum if tracker monitoring began late; missing values remain unset.
+
+## Game statistics design
+
+- The detail statistics grid uses the number of available facts as its desktop column count, with mobile breakpoints to prevent an orphaned fourth card.
+- The label **Release** displays month and year from the earliest identified Roblox universe creation timestamp. The timestamp is a documented proxy, not proof of the public launch day.
+- Peak CCU values remain exact in the source data but display rounded **upward** as approximate values (e.g., `~3.3K`, `~700`). Seishun's studio-reported approximate high is intentionally displayed as `4K+`.
+- Historical CCU research includes the identified original uploads: Chesapeake Studios for Oath of Office and Command Authority, Reef Points for Marine Academy, and HanamiSoft for Seishun.
