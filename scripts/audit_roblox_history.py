@@ -26,9 +26,15 @@ LEGACY = [
     {"slug": "kiseki", "placeId": 133366389873083, "label": "Older Kiseki / Red Parasol Games-era release"},
     {"slug": "army-bootcamp", "placeId": 135329589664705, "label": "Reef Points Army Academy original"},
 ]
+RETIRED = [
+    {"slug": "port-of-entry", "placeId": 130949000912906, "label": "Chesapeake Archive / originally Chesapeake Studios"},
+    {"slug": "the-foundation", "placeId": 90503149907738, "label": "Chesapeake Archive / originally Chesapeake Studios"},
+    {"slug": "white-house-roleplay", "placeId": 96875176477583, "label": "Chesapeake Archive / originally Chesapeake Studios"},
+]
 EXPLICIT_GROUPS = {
     17005184: "Chesapeake Studios",
     10922050: "Reef Points",
+    34779126: "Chesapeake Archive",
 }
 
 def get_json(url: str) -> dict:
@@ -75,7 +81,7 @@ def fetch_group_games(gid: int):
 
 def main():
     active = json.loads(CATALOG.read_text())
-    input_records = [{"kind": "current", **r} for r in active] + [{"kind": "legacy", **r} for r in LEGACY]
+    input_records = [{"kind": "current", **r} for r in active] + [{"kind": "legacy", **r} for r in LEGACY] + [{"kind": "retired", **r} for r in RETIRED]
     mapping = {}
     errors = []
     for item in input_records:
@@ -94,7 +100,7 @@ def main():
         response = get_json("https://games.roblox.com/v1/games?" + query)
         for game in response.get("data", []):
             by_id[int(game["id"])] = game
-    current, historical = [], []
+    current, historical, retired = [], [], []
     discovered_groups = dict(EXPLICIT_GROUPS)
     for entry in input_records:
         u = entry.get("resolvedUniverseId")
@@ -120,7 +126,7 @@ def main():
             "rootPlaceId": (g or {}).get("rootPlaceId"),
             "robloxUrl": f"https://www.roblox.com/games/{entry['placeId']}/",
         }
-        (current if entry["kind"] == "current" else historical).append(result)
+        (current if entry["kind"] == "current" else historical if entry["kind"] == "legacy" else retired).append(result)
 
     group_games = {}
     for group_id, group_name in sorted(discovered_groups.items()):
@@ -133,7 +139,7 @@ def main():
             print("Group collection not available for", group_id, exc, flush=True)
 
     sums = {}
-    for game in current + historical:
+    for game in current + historical + retired:
         slot = sums.setdefault(game["slug"], {"knownReleases": [], "knownVisitSum": 0, "complete": True})
         if game["universeId"] in [x["universeId"] for x in slot["knownReleases"]]:
             slot["complete"] = False
@@ -143,7 +149,7 @@ def main():
             slot["complete"] = False
         else:
             slot["knownVisitSum"] += visits
-        slot["knownReleases"].append({"kind": "legacy" if game in historical else "current", "placeId": game["placeId"], "universeId": game["universeId"], "visits": visits, "creator": (game["creator"] or {}).get("name")})
+        slot["knownReleases"].append({"kind": "retired" if game in retired else "legacy" if game in historical else "current", "placeId": game["placeId"], "universeId": game["universeId"], "visits": visits, "creator": (game["creator"] or {}).get("name")})
 
     payload = {
         "retrievedAt": dt.datetime.now(dt.timezone.utc).isoformat(),
@@ -151,13 +157,14 @@ def main():
         "warning": "Public snapshot. knownVisitSum covers listed releases only; not an exhaustive studio history. CCU is an instantaneous sample, not an all-time peak. Group lists are candidates, NOT attribution.",
         "current": current,
         "historical": historical,
+        "retired": retired,
         "byGame": sums,
         "creatorGroupDiscovery": group_games,
         "errors": errors,
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n")
-    print("Wrote", OUTPUT, "with", len(current), "active and", len(historical), "historical releases, errors:",len(errors))
+    print("Wrote", OUTPUT, "with", len(current), "active and", len(historical), "historical releases,", len(retired), "retired releases, errors:",len(errors))
 
 if __name__ == "__main__":
     main()
