@@ -210,7 +210,7 @@ export function formatMilestone(visits: number | null): string | null {
 /** Display historical peak CCU as an upward-rounded, approximate figure. */
 export function formatPeakCCU(value: number | null, plus = false): string | null {
   if (value === null || !Number.isFinite(value) || value < 0) return null;
-  const increment = value >= 1000 ? 100 : value >= 100 ? 10 : value >= 20 ? 5 : 1;
+  const increment = value >= 500 ? 100 : value >= 100 ? 10 : value >= 20 ? 5 : 1;
   const rounded = Math.ceil(value / increment) * increment;
   const label = rounded >= 1000 ? `${parseFloat((rounded / 1000).toFixed(1))}K` : rounded.toLocaleString('en-US');
   return plus ? label + '+' : '~' + label;
