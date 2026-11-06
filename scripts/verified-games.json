@@ -20,8 +20,7 @@
   },
   {
     "slug": "kiseki",
-    "placeId": 133366389873083,
-    "universeId": 10412899540
+    "placeId": 72156617432799
   },
   {
     "slug": "line-of-fire",
@@ -29,8 +28,16 @@
     "universeId": 8062101952
   },
   {
+    "slug": "isekai-trading-simulator",
+    "placeId": 93596733187914
+  },
+  {
     "slug": "moosewood",
     "placeId": 84326252804702
+  },
+  {
+    "slug": "command-authority-second-strike",
+    "placeId": 122013016126886
   },
   {
     "slug": "marine-academy",
@@ -38,9 +45,12 @@
     "universeId": 10037019232
   },
   {
-    "slug": "army-academy",
-    "placeId": 135329589664705,
-    "universeId": 9060117723
+    "slug": "naval-academy",
+    "placeId": 132063414676820
+  },
+  {
+    "slug": "army-bootcamp",
+    "placeId": 88270740762567
   },
   {
     "slug": "clean-a-bloxbuster",
