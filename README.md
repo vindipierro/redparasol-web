@@ -38,7 +38,7 @@ npm run preview
 
 The public catalog contains **only active/playable titles**. The studio's historical lifetime milestone **includes retired titles and earlier uploads**, but only after records have been reconciled. The `historicStudioMilestone` value intentionally remains `null` until the total is verified. Nothing in the interface should imply that lifetime visits equal unique players.
 
-Individual game `lifetimeVisits` values are also `null` until reconciled. Dates and direct Roblox links should be verified before publication. The only prefilled play URL is the Seishun game link supplied in the project discussion.
+Individual game `lifetimeVisits` values are also `null` until reconciled. Dates and direct Roblox links should be verified before publication. Ten game pages have been matched to public Roblox listings; some migrated experiences still require a final canonical destination check. Three titles remain without verified URLs: Anime Trading Simulator, Navy Academy, and Command Authority: Second Strike.
 
 The optional `retiredTitlesLedger` in `src/data/studio.ts` is for historical records, not public catalog listings.
 
@@ -46,8 +46,11 @@ The optional `retiredTitlesLedger` in `src/data/studio.ts` is for historical rec
 
 - `public/images/brand/mascot-full.webp` is a web-optimized copy of the supplied full-body mascot artwork (768 × 768), used in the homepage hero and About page.
 - `public/images/brand/mascot-closeup.webp` is a web-optimized copy of the supplied close-up artwork (512 × 512), used in the header and footer. Both preserve transparency and the original illustrated design.
-- Game cards deliberately use graphic placeholder compositions until original, approved images are provided.
-- Add images to `public/images/games/` and link the paths in `src/data/games.ts`.
+- Ten official Roblox thumbnails have been downloaded into `public/images/games/`, with their paths registered in `src/data/game-thumbnails.json`. The website uses these on cards and game detail pages.
+- `scripts/verified-games.json` contains checked Roblox place IDs. Do not add unknown or similarly named games without matching their ownership and description.
+- `.github/workflows/sync-roblox-artwork.yml` periodically refreshes these sources on workflow dispatch, or when its source files change. It uses the official Roblox thumbnail endpoint, with game icons as a fallback.
+- The three still-unmatched games retain decorative placeholder artwork rather than potentially incorrect images.
+- To use studio-approved artwork instead, set a local `artwork` or `banner` path on the relevant entry in `src/data/games.ts`; custom assets take priority.
 
 ## Deployment
 
@@ -57,7 +60,8 @@ The Astro build outputs static files in `dist/`. Deploy to a static hosting prov
 
 - [x] Replace provisional mascot with the supplied original mascot artwork (optimized WebP derivatives).
 - [ ] Review whether official vector originals or higher-resolution exports should be added for future reuse.
-- [ ] Add approved artwork for all 13 active games, especially the four homepage features.
+- [x] Import official Roblox thumbnail assets for ten matched games, including the four homepage features.
+- [ ] Find the correct links and official thumbnails for Anime Trading Simulator, Navy Academy, and Command Authority: Second Strike.
 - [ ] Verify direct Roblox links, including migrated experiences.
 - [ ] Confirm original release years and historical lifetime visits.
 - [ ] Reconcile historical and retired-game totals; set the studio milestone.
