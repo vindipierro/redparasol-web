@@ -7,9 +7,9 @@
         "universeId": 10061511956,
         "era": "current",
         "public": {
-          "name": "[🎃] Seishun: School Life Roleplay",
-          "visits": 11283060,
-          "playingAtAudit": 308,
+          "name": "Seishun: School Life Roleplay",
+          "visits": 11292678,
+          "playingAtAudit": 291,
           "created": "2026-04-20T14:44:51.248Z",
           "creator": {
             "id": 741366225,
@@ -30,7 +30,7 @@
         "universeId": 8380716357,
         "public": {
           "name": "Seishun: School Life Roleplay",
-          "visits": 13200122,
+          "visits": 13200148,
           "playingAtAudit": 0,
           "created": "2025-08-08T17:03:20.823Z",
           "creator": {
@@ -52,8 +52,8 @@
         "universeId": 10151528938,
         "public": {
           "name": "Oath of Office: Political Roleplay",
-          "visits": 1593545,
-          "playingAtAudit": 215,
+          "visits": 1601114,
+          "playingAtAudit": 239,
           "created": "2026-05-11T05:21:03.748Z",
           "creator": {
             "id": 706873563,
@@ -74,7 +74,7 @@
         "universeId": 6500116207,
         "public": {
           "name": "[GAME MOVED] Oath of Office: Political Simulator",
-          "visits": 20191655,
+          "visits": 20191690,
           "playingAtAudit": 0,
           "created": "2024-09-01T17:30:07.057Z",
           "creator": {
@@ -95,9 +95,9 @@
         "universeId": 9718589349,
         "era": "current",
         "public": {
-          "name": "🗺️ [MAP] Silk Road: Trading Simulator",
-          "visits": 4441736,
-          "playingAtAudit": 108,
+          "name": "🏠 [HOUSING] Silk Road: Trading Simulator",
+          "visits": 4448038,
+          "playingAtAudit": 166,
           "created": "2026-02-13T15:12:38.697Z",
           "creator": {
             "id": 624453376,
@@ -118,8 +118,8 @@
         "era": "current",
         "public": {
           "name": "Command Authority: Military Roleplay",
-          "visits": 2394713,
-          "playingAtAudit": 81,
+          "visits": 2400575,
+          "playingAtAudit": 79,
           "created": "2026-05-04T15:45:53.392Z",
           "creator": {
             "id": 578103619,
@@ -140,7 +140,7 @@
         "universeId": 6880380861,
         "public": {
           "name": "Command Authority: Military Roleplay",
-          "visits": 9818740,
+          "visits": 9818761,
           "playingAtAudit": 0,
           "created": "2024-12-05T17:18:54.367Z",
           "creator": {
@@ -162,7 +162,7 @@
         "universeId": 10398723548,
         "public": {
           "name": "Kiseki!",
-          "visits": 2401,
+          "visits": 3635,
           "playingAtAudit": 1,
           "created": "2026-06-26T15:59:14.343Z",
           "creator": {
@@ -206,8 +206,8 @@
         "era": "current",
         "public": {
           "name": "Line of Fire: Secret Service Roleplay",
-          "visits": 4000267,
-          "playingAtAudit": 0,
+          "visits": 4001376,
+          "playingAtAudit": 6,
           "created": "2025-07-03T17:08:31.903Z",
           "creator": {
             "id": 17005184,
@@ -228,7 +228,7 @@
         "universeId": 10590305704,
         "public": {
           "name": "Isekai Trading Simulator",
-          "visits": 51926,
+          "visits": 51941,
           "playingAtAudit": 0,
           "created": "2026-07-29T04:36:37.504Z",
           "creator": {
@@ -250,8 +250,8 @@
         "universeId": 10363633306,
         "public": {
           "name": "🌉 [LAKE TRIP] Moosewood: Camp Roleplay",
-          "visits": 550833,
-          "playingAtAudit": 2,
+          "visits": 550918,
+          "playingAtAudit": 0,
           "created": "2026-06-20T15:52:10.473Z",
           "creator": {
             "id": 843872178,
@@ -261,6 +261,28 @@
             "hasVerifiedBadge": false
           },
           "rootPlaceId": 84326252804702
+        }
+      },
+      {
+        "game": "moosewood",
+        "placeId": 76324638514569,
+        "group": "Studio-confirmed earlier upload",
+        "note": "Original Moosewood: Camping Roleplay; count as a separate universe when visits are independently retrievable",
+        "era": "legacy",
+        "universeId": 8889359126,
+        "public": {
+          "name": "Moosewood: Camping Roleplay",
+          "visits": 58372,
+          "playingAtAudit": 0,
+          "created": "2025-10-06T22:56:43.337Z",
+          "creator": {
+            "id": 35475452,
+            "name": "HanamiSoft",
+            "type": "Group",
+            "isRNVAccount": false,
+            "hasVerifiedBadge": true
+          },
+          "rootPlaceId": 76324638514569
         }
       }
     ],
@@ -272,8 +294,8 @@
         "universeId": 10773559311,
         "public": {
           "name": "Command Authority: Second Strike",
-          "visits": 15129,
-          "playingAtAudit": 6,
+          "visits": 17176,
+          "playingAtAudit": 63,
           "created": "2026-10-28T21:25:46.702Z",
           "creator": {
             "id": 578103619,
@@ -293,9 +315,9 @@
         "universeId": 10037019232,
         "era": "current",
         "public": {
-          "name": "🪖[ARMORY] Marine Academy: Military Roleplay",
-          "visits": 5104075,
-          "playingAtAudit": 121,
+          "name": "🤿[TRAINING] Marine Academy: Military Roleplay",
+          "visits": 5117079,
+          "playingAtAudit": 187,
           "created": "2026-04-14T19:59:59.907Z",
           "creator": {
             "id": 578103619,
@@ -316,7 +338,7 @@
         "universeId": 8618422844,
         "public": {
           "name": "Marine Academy: Military Roleplay",
-          "visits": 7090162,
+          "visits": 7090185,
           "playingAtAudit": 0,
           "created": "2025-09-02T17:50:58.537Z",
           "creator": {
@@ -338,7 +360,7 @@
         "universeId": 10543169614,
         "public": {
           "name": "[BETA] Naval Academy",
-          "visits": 32694,
+          "visits": 32716,
           "playingAtAudit": 0,
           "created": "2026-07-21T17:55:45.895Z",
           "creator": {
@@ -360,7 +382,7 @@
         "universeId": 10434824939,
         "public": {
           "name": "Army Bootcamp: Fort Liberty",
-          "visits": 310176,
+          "visits": 310279,
           "playingAtAudit": 0,
           "created": "2026-07-02T18:33:38.902Z",
           "creator": {
@@ -382,7 +404,7 @@
         "universeId": 9060117723,
         "public": {
           "name": "Army Academy: Military Roleplay",
-          "visits": 972728,
+          "visits": 972823,
           "playingAtAudit": 0,
           "created": "2025-10-29T18:40:25.167Z",
           "creator": {
@@ -404,7 +426,7 @@
         "universeId": 10766486375,
         "public": {
           "name": "Clean a Bloxbuster! ",
-          "visits": 19717,
+          "visits": 19760,
           "playingAtAudit": 0,
           "created": "2026-09-14T21:23:05.721Z",
           "creator": {
@@ -421,91 +443,91 @@
   },
   "totals": {
     "seishun": {
-      "observedVisits": 24483182,
+      "observedVisits": 24492826,
       "complete": true,
       "knownVersions": 2,
       "observedVersions": 2,
       "note": "Sum is only of identified universes. Further uploads may exist; don't publish as full lifetime total unless reconciled."
     },
     "oath-of-office": {
-      "observedVisits": 21785200,
+      "observedVisits": 21792804,
       "complete": true,
       "knownVersions": 2,
       "observedVersions": 2,
       "note": "Sum is only of identified universes. Further uploads may exist; don't publish as full lifetime total unless reconciled."
     },
     "silk-road": {
-      "observedVisits": 4441736,
+      "observedVisits": 4448038,
       "complete": true,
       "knownVersions": 1,
       "observedVersions": 1,
       "note": "Sum is only of identified universes. Further uploads may exist; don't publish as full lifetime total unless reconciled."
     },
     "command-authority": {
-      "observedVisits": 12213453,
+      "observedVisits": 12219336,
       "complete": true,
       "knownVersions": 2,
       "observedVersions": 2,
       "note": "Sum is only of identified universes. Further uploads may exist; don't publish as full lifetime total unless reconciled."
     },
     "kiseki": {
-      "observedVisits": 169744,
+      "observedVisits": 170978,
       "complete": true,
       "knownVersions": 2,
       "observedVersions": 2,
       "note": "Sum is only of identified universes. Further uploads may exist; don't publish as full lifetime total unless reconciled."
     },
     "line-of-fire": {
-      "observedVisits": 4000267,
+      "observedVisits": 4001376,
       "complete": true,
       "knownVersions": 1,
       "observedVersions": 1,
       "note": "Sum is only of identified universes. Further uploads may exist; don't publish as full lifetime total unless reconciled."
     },
     "isekai-trading-simulator": {
-      "observedVisits": 51926,
+      "observedVisits": 51941,
       "complete": true,
       "knownVersions": 1,
       "observedVersions": 1,
       "note": "Sum is only of identified universes. Further uploads may exist; don't publish as full lifetime total unless reconciled."
     },
     "moosewood": {
-      "observedVisits": 550833,
+      "observedVisits": 609290,
       "complete": true,
-      "knownVersions": 1,
-      "observedVersions": 1,
+      "knownVersions": 2,
+      "observedVersions": 2,
       "note": "Sum is only of identified universes. Further uploads may exist; don't publish as full lifetime total unless reconciled."
     },
     "command-authority-second-strike": {
-      "observedVisits": 15129,
+      "observedVisits": 17176,
       "complete": true,
       "knownVersions": 1,
       "observedVersions": 1,
       "note": "Sum is only of identified universes. Further uploads may exist; don't publish as full lifetime total unless reconciled."
     },
     "marine-academy": {
-      "observedVisits": 12194237,
+      "observedVisits": 12207264,
       "complete": true,
       "knownVersions": 2,
       "observedVersions": 2,
       "note": "Sum is only of identified universes. Further uploads may exist; don't publish as full lifetime total unless reconciled."
     },
     "naval-academy": {
-      "observedVisits": 32694,
+      "observedVisits": 32716,
       "complete": true,
       "knownVersions": 1,
       "observedVersions": 1,
       "note": "Sum is only of identified universes. Further uploads may exist; don't publish as full lifetime total unless reconciled."
     },
     "army-bootcamp": {
-      "observedVisits": 1282904,
+      "observedVisits": 1283102,
       "complete": true,
       "knownVersions": 2,
       "observedVersions": 2,
       "note": "Sum is only of identified universes. Further uploads may exist; don't publish as full lifetime total unless reconciled."
     },
     "clean-a-bloxbuster": {
-      "observedVisits": 19717,
+      "observedVisits": 19760,
       "complete": true,
       "knownVersions": 1,
       "observedVersions": 1,
@@ -520,7 +542,7 @@
         {
           "id": 6500116207,
           "name": "[GAME MOVED] Oath of Office: Political Simulator",
-          "placeVisits": 20191655,
+          "placeVisits": 20191690,
           "rootPlace": {
             "id": 110814051639689,
             "type": "Place"
@@ -529,7 +551,7 @@
         {
           "id": 6880380861,
           "name": "Command Authority: Military Roleplay",
-          "placeVisits": 9818740,
+          "placeVisits": 9818761,
           "rootPlace": {
             "id": 115895476455258,
             "type": "Place"
@@ -538,7 +560,7 @@
         {
           "id": 7930543600,
           "name": "His Majesty's Government",
-          "placeVisits": 1688318,
+          "placeVisits": 1688625,
           "rootPlace": {
             "id": 97694071689916,
             "type": "Place"
@@ -547,7 +569,7 @@
         {
           "id": 8062101952,
           "name": "Line of Fire: Secret Service Roleplay",
-          "placeVisits": 4000267,
+          "placeVisits": 4001376,
           "rootPlace": {
             "id": 127499782145032,
             "type": "Place"
@@ -556,7 +578,7 @@
         {
           "id": 9342993768,
           "name": "Red Storm: Military Roleplay",
-          "placeVisits": 259952,
+          "placeVisits": 259958,
           "rootPlace": {
             "id": 75046223731180,
             "type": "Place"
@@ -571,7 +593,7 @@
         {
           "id": 8618422844,
           "name": "Marine Academy: Military Roleplay",
-          "placeVisits": 7090162,
+          "placeVisits": 7090185,
           "rootPlace": {
             "id": 71096510493525,
             "type": "Place"
@@ -580,7 +602,7 @@
         {
           "id": 9060117723,
           "name": "Army Academy: Military Roleplay",
-          "placeVisits": 972728,
+          "placeVisits": 972823,
           "rootPlace": {
             "id": 135329589664705,
             "type": "Place"
@@ -595,7 +617,7 @@
         {
           "id": 8380716357,
           "name": "Seishun: School Life Roleplay",
-          "placeVisits": 13200122,
+          "placeVisits": 13200148,
           "rootPlace": {
             "id": 99916990523640,
             "type": "Place"
