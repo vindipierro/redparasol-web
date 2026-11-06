@@ -45,7 +45,7 @@ export const games: Game[] = [
   },
   {
     slug: 'oath-of-office',
-    title: 'Oath of Office: Political Simulator',
+    title: 'Oath of Office: Political Roleplay',
     shortTitle: 'Oath of Office',
     genre: 'government',
     description: 'Shape American politics from Congress, the executive branch, or the courtroom as you debate laws and make decisions that change the nation.',
