@@ -1,0 +1,97 @@
+{
+  "collectedOn": "2026-11-05",
+  "policy": "Peak CCU is the highest credible public tracker observation across known release versions, or a studio-provided approximate peak; missing values are not filled with invented figures.",
+  "peaks": {
+    "seishun": {
+      "value": 4000,
+      "approximate": true,
+      "source": "studio-reported",
+      "url": null,
+      "note": "Studio's approximate overall high; older HanamiSoft release independently recorded 3,367."
+    },
+    "oath-of-office": {
+      "value": 3225,
+      "approximate": false,
+      "source": "Rolimon's tracked peak",
+      "url": "https://www.rolimons.com/game/110814051639689",
+      "note": "Older Chesapeake release, 2024-11-11"
+    },
+    "silk-road": {
+      "value": 1592,
+      "approximate": false,
+      "source": "Rolimon's tracked peak",
+      "url": "https://www.rolimons.com/game/103073154610301",
+      "note": "2026-04-05"
+    },
+    "command-authority": {
+      "value": 666,
+      "approximate": false,
+      "source": "Rolimon's tracked peak",
+      "url": "https://www.rolimons.com/game/115895476455258",
+      "note": "Older Chesapeake release, 2025-07-25"
+    },
+    "kiseki": {
+      "value": null,
+      "approximate": false,
+      "source": "Rival Ducks observed peak",
+      "url": "https://rivalducks.com/apps/radar/games/10412899540-kiseki-rival-academies-roleplay",
+      "note": "13 observed Sep 2026, but monitoring began after game launch; not defensible as lifetime peak"
+    },
+    "line-of-fire": {
+      "value": 675,
+      "approximate": false,
+      "source": "Rolimon's tracked peak",
+      "url": "https://www.rolimons.com/game/127499782145032",
+      "note": "2025-07-27"
+    },
+    "isekai-trading-simulator": {
+      "value": 117,
+      "approximate": false,
+      "source": "Rival Ducks tracked peak",
+      "url": "https://rivalducks.com/apps/radar/games/10590305704-isekai-trading-simulator",
+      "note": "2026-10-01, tracker begins 2026-08-17"
+    },
+    "moosewood": {
+      "value": null,
+      "approximate": false,
+      "source": "IntelBricks tracked peak",
+      "url": "https://www.intelbricks.com/games/lake-trip-moosewood-camp-roleplay-10363633306",
+      "note": "17 observed Aug–Sep 2026; monitoring incomplete for earlier launch weeks"
+    },
+    "command-authority-second-strike": {
+      "value": null,
+      "approximate": false,
+      "source": null,
+      "url": null,
+      "note": "No defensible public all-time peak located"
+    },
+    "marine-academy": {
+      "value": 1964,
+      "approximate": false,
+      "source": "Rolimon's tracked peak",
+      "url": "https://www.rolimons.com/game/71096510493525",
+      "note": "Older Reef Points release, 2025-09-20"
+    },
+    "naval-academy": {
+      "value": null,
+      "approximate": false,
+      "source": null,
+      "url": null,
+      "note": "No defensible public all-time peak located"
+    },
+    "army-bootcamp": {
+      "value": null,
+      "approximate": false,
+      "source": null,
+      "url": null,
+      "note": "No defensible public peak across Army Academy and Fort Liberty releases"
+    },
+    "clean-a-bloxbuster": {
+      "value": null,
+      "approximate": false,
+      "source": null,
+      "url": null,
+      "note": "No defensible public all-time peak located"
+    }
+  }
+}
