@@ -27,6 +27,7 @@ npm run preview
 - `/games/` — Active catalog with genre filters.
 - `/games/[slug]/` — Static individual experience pages.
 - `/about/` — Concise studio overview.
+- `/404.html` — Branded, responsive not-found page with the original red panda mascot, navigation links, and noindex metadata. Astro emits this page as a static 404 document for hosts such as Vercel.
 
 ## Editable content
 

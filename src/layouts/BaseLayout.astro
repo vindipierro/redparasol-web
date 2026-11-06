@@ -1,8 +1,8 @@
 ---
 import '../styles/global.css';
 import { studio } from '../data/studio';
-interface Props { title?: string; description?: string }
-const { title = studio.name, description = studio.description } = Astro.props;
+interface Props { title?: string; description?: string; noindex?: boolean }
+const { title = studio.name, description = studio.description, noindex = false } = Astro.props;
 const pageTitle = title === studio.name ? studio.name + ' | We Build Worlds. You Write the Story.' : title + ' | ' + studio.name;
 const path = Astro.url.pathname;
 const year = new Date().getFullYear();
@@ -14,7 +14,8 @@ const year = new Date().getFullYear();
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="theme-color" content="#1e2430"/>
     <meta name="description" content={description}/>
-    <link rel="canonical" href={new URL(path, studio.siteUrl).toString()}/>
+    {noindex && <meta name="robots" content="noindex, follow"/>}
+    {!noindex && <link rel="canonical" href={new URL(path, studio.siteUrl).toString()}/>}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
