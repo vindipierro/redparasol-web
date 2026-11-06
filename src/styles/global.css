@@ -75,8 +75,7 @@ h1 em,h2 em { color: var(--coral); font-style: normal }
 .small-parasol { position: absolute; z-index: 4; opacity: .85; filter: drop-shadow(0 6px 0 rgba(75,45,41,.07)); animation: float 7s ease-in-out infinite }
 .parasol-one { width: 100px; left: 6%; top: 58%; transform: rotate(-20deg) }
 .parasol-two { width: 64px; right: 1%; top: 43%; animation-delay: -4s }
-.hero-mascot { position: absolute; z-index: 6; width: min(80%, 480px); right: 6%; bottom: -10px; filter: drop-shadow(12px 20px 0 rgba(71,40,42,.12)); animation: bob 5s ease-in-out infinite }
-.hero-mascot .parasol-canopy { transform-origin: 70% 31%; animation: canopy-sway 5s ease-in-out infinite }
+.hero-mascot { object-fit: contain; position: absolute; z-index: 6; width: min(80%, 480px); right: 6%; bottom: -10px; filter: drop-shadow(12px 20px 0 rgba(71,40,42,.12)); animation: bob 5s ease-in-out infinite }
 .hero-sparkle { position: absolute; z-index: 5; font-size: 37px; color: var(--coral) }
 .sparkle-one { top: 12%; right: 10% }
 .sparkle-two { left: 31%; top: 36%; color: #ca895c }
@@ -192,7 +191,7 @@ h1 em,h2 em { color: var(--coral); font-style: normal }
 .about-hero-grid h1 { font-size: clamp(62px,7vw,110px) }
 .about-hero-grid p:not(.eyebrow) { max-width: 570px }
 .about-mascot-wrap { position: relative; align-self: end; height: 560px }
-.about-mascot { position: absolute; z-index: 2; bottom: 0; width: 100%; max-height: 540px; filter: drop-shadow(12px 14px 0 rgba(78,48,51,.1)); animation: bob 6s ease-in-out infinite }
+.about-mascot { object-fit: contain; position: absolute; z-index: 2; bottom: 0; width: 100%; max-height: 540px; filter: drop-shadow(12px 14px 0 rgba(78,48,51,.1)); animation: bob 6s ease-in-out infinite }
 .about-ring { position: absolute; background: #f2cfac; width: 95%; aspect-ratio: 1; border-radius: 50%; top: 15%; left: 6% }
 .about-content-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 110px }
 .about-content-grid p:not(.eyebrow) { font-size: 17px; color: var(--muted-light); line-height: 1.9; margin-bottom: 22px }
@@ -201,7 +200,6 @@ h1 em,h2 em { color: var(--coral); font-style: normal }
 .about-closer h2 em { color: var(--coral-deep) }
 @keyframes drift { from { transform: translateX(-17px) } to { transform: translateX(17px) } }
 @keyframes bob { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-13px) } }
-@keyframes canopy-sway { 0%,100% { transform: rotate(0deg) } 50% { transform: rotate(1.4deg) } }
 @keyframes float { 0%,100% { translate: 0 0 } 50% { translate: 0 -15px } }
 @keyframes marquee { from { transform: translateX(0) } to { transform: translateX(-35%) } }
 @keyframes slow-spin { to { transform: rotate(360deg) } }

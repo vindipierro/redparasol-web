@@ -44,8 +44,8 @@ The optional `retiredTitlesLedger` in `src/data/studio.ts` is for historical rec
 
 ## Artwork
 
-- `public/images/brand/mascot-reference.png` is a **small cropped reference from the user-supplied logo variations**, not final high-resolution brand artwork.
-- `src/components/Mascot.astro` is a temporary vector mascot interpretation for layout development. Replace with approved official artwork before launch.
+- `public/images/brand/mascot-full.webp` is a web-optimized copy of the supplied full-body mascot artwork (768 × 768), used in the homepage hero and About page.
+- `public/images/brand/mascot-closeup.webp` is a web-optimized copy of the supplied close-up artwork (512 × 512), used in the header and footer. Both preserve transparency and the original illustrated design.
 - Game cards deliberately use graphic placeholder compositions until original, approved images are provided.
 - Add images to `public/images/games/` and link the paths in `src/data/games.ts`.
 
@@ -55,7 +55,8 @@ The Astro build outputs static files in `dist/`. Deploy to a static hosting prov
 
 ## Before launch
 
-- [ ] Replace reference mascot with final official vector/high-resolution brand assets.
+- [x] Replace provisional mascot with the supplied original mascot artwork (optimized WebP derivatives).
+- [ ] Review whether official vector originals or higher-resolution exports should be added for future reuse.
 - [ ] Add approved artwork for all 13 active games, especially the four homepage features.
 - [ ] Verify direct Roblox links, including migrated experiences.
 - [ ] Confirm original release years and historical lifetime visits.
