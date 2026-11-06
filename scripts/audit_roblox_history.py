@@ -25,6 +25,7 @@ LEGACY = [
     {"slug": "marine-academy", "placeId": 71096510493525, "label": "Reef Points original"},
     {"slug": "kiseki", "placeId": 133366389873083, "label": "Older Kiseki / Red Parasol Games-era release"},
     {"slug": "army-bootcamp", "placeId": 135329589664705, "label": "Reef Points Army Academy original"},
+    {"slug": "moosewood", "placeId": 76324638514569, "label": "Original Moosewood: Camping Roleplay (studio-confirmed)"},
 ]
 RETIRED = [
     {"slug": "port-of-entry", "placeId": 130949000912906, "label": "Chesapeake Archive / originally Chesapeake Studios"},

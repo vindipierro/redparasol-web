@@ -21,6 +21,7 @@ LEGACY = [
     {"game": "command-authority", "placeId": 115895476455258, "group": "Chesapeake Studios", "note": "Old military roleplay redirects to current version"},
     {"game": "marine-academy", "placeId": 71096510493525, "group": "Reef Points", "note": "Old academy explicitly redirects"},
     {"game": "army-bootcamp", "placeId": 135329589664705, "group": "Reef Points", "note": "Former Army Academy; product lineage requires confirmation"},
+    {"game": "moosewood", "placeId": 76324638514569, "group": "Studio-confirmed earlier upload", "note": "Original Moosewood: Camping Roleplay; count as a separate universe when visits are independently retrievable"},
 ]
 GROUPS = [
     {"name": "Chesapeake Studios", "id": 17005184},

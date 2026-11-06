@@ -42,6 +42,8 @@ Individual game `lifetimeVisits` values are now populated from known, nonoverlap
 
 The `retiredTitlesLedger` in `src/data/studio.ts` holds verified retired and regional Chesapeake experiences for historical statistics only. They do not appear in the playable catalog.
 
+Moosewood also has a studio-confirmed earlier upload, **Moosewood: Camping Roleplay** (Roblox Place ID `76324638514569`), recorded in both historical-audit scripts and the `historicalPlaceIds` field in `src/data/games.ts`. The current playable Moosewood link stays at Place ID `84326252804702`. Historical visits from the earlier upload should be added to Moosewood and the audited studio subtotal **only after** its distinct universe and public visits can be resolved. The existing `550,833` Moosewood count and `88,444,580` studio subtotal are therefore verified lower bounds until this legacy version can be reconciled.
+
 ## Artwork
 
 - `public/images/brand/mascot-full.webp` is a web-optimized copy of the supplied full-body mascot artwork (768 × 768), used in the homepage hero and About page.
