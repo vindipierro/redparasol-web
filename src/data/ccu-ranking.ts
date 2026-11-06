@@ -5,7 +5,8 @@ import snapshot from './ccu-order.json';
  * Current CCU itself is intentionally neither shown to visitors nor embedded in the JSON.
  */
 export function sortGamesByCCU<T extends { slug: string }>(items: readonly T[]): T[] {
-  const positions = new Map(snapshot.order.map((slug, index) => [slug, index]));
+  const slugs = snapshot.order as string[];
+  const positions = new Map<string, number>(slugs.map((slug, index) => [slug, index]));
 
   return items
     .map((game, originalIndex) => ({ game, originalIndex }))
