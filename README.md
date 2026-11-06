@@ -36,11 +36,11 @@ npm run preview
 
 ### Data verification rules
 
-The public catalog contains **only active/playable titles**. The studio's historical lifetime milestone **includes retired titles and earlier uploads**, but only after records have been reconciled. The studio currently publishes a documented **83M+** lower-bound milestone based on the public Roblox API audit collected on November 5, 2026 ET. This includes 13 active games with their six identifiable reuploads plus two other Chesapeake games (His Majesty's Government and Red Storm). Other historical titles may remain unlocated. Nothing in the interface should imply that lifetime visits equal unique players.
+The public catalog contains **only active/playable titles**. The studio's historical lifetime milestone **includes retired titles and earlier uploads**, but only after records have been reconciled. The studio currently publishes a documented **88M+** lower-bound milestone based on the public Roblox API audit collected on November 5, 2026 ET. This includes 13 active games with six identifiable reuploads plus nine historically associated titles under Chesapeake Studios and Chesapeake Archive. The recorded subtotal is 88,444,580 visits, counting each Roblox universe only once. Other historical titles may remain unlocated. Nothing in the interface should imply that lifetime visits equal unique players.
 
 Individual game `lifetimeVisits` values are now populated from known, nonoverlapping universe IDs found in the source audit. These are point-in-time snapshots and should be refreshed periodically. Original release years are the earliest known Roblox universe creation years in the audit, rather than independently documented public launch dates. Exact Roblox links were supplied by the studio or checked. All 13 active game pages have user-supplied or previously matched Roblox play URLs. The corrected canonical pages for Kiseki, Isekai Trading Simulator, Naval Academy, Army Bootcamp: Fort Liberty, and Command Authority: Second Strike come directly from the studio; any additional migrations should be updated here.
 
-The optional `retiredTitlesLedger` in `src/data/studio.ts` is for historical records, not public catalog listings.
+The `retiredTitlesLedger` in `src/data/studio.ts` holds verified retired and regional Chesapeake experiences for historical statistics only. They do not appear in the playable catalog.
 
 ## Artwork
 
@@ -85,7 +85,7 @@ Both the homepage's four featured experiences and the full 13-game catalog are s
 - `research/public-roblox-history.json` records Roblox API visits, creators, release timestamps, and universe mappings for every active game plus identifiable legacy versions. The summed visits are **known-release subtotals**, not necessarily full lifetime coverage for every game.
 - `research/peak-ccu-sources.json` records the public tracker evidence for manually maintained CCU peaks. Those are recorded third-party peaks, not Roblox-owned all-time guarantees. Seishun's approximately 4,000 figure is a studio-reported estimate.
 - **Historical visits and CCU are separate from live CCU ranking.** The ranking still comes from the periodic Roblox `playing` field, with no popularity indicator shown publicly.
-- `src/data/studio.ts` holds the two additional Chesapeake games contributing to the documented 83M+ historical milestone but excluded from the active catalog.
+- `src/data/studio.ts` holds nine additional Chesapeake Studios / Chesapeake Archive games (including archived regional releases) contributing to the documented 88M+ historical milestone, all excluded from the active catalog.
 
 ## Historical public metrics audit (November 5, 2026)
 

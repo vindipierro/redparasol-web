@@ -35,7 +35,7 @@ export const games: Game[] = [
     description: 'Attend classes, join clubs, customize your character, and make lifelong friendships in an anime-inspired school town.',
     featured: true,
     releaseYear: 2025,
-    lifetimeVisits: 24483085,
+    lifetimeVisits: 24483194,
     peakCCU: 4000,
     peakCCUSource: 'studio-approximate',
     peakCCUApproximate: true,
@@ -49,7 +49,7 @@ export const games: Game[] = [
     description: 'Shape American politics from Congress, the executive branch, or the courtroom as you debate laws and make decisions that change the nation.',
     featured: true,
     releaseYear: 2024,
-    lifetimeVisits: 21785124,
+    lifetimeVisits: 21785205,
     peakCCU: 3225,
     peakCCUSource: 'public-tracker',
     robloxUrl: 'https://www.roblox.com/games/83895704311875/Oath-of-Office-Political-Roleplay'
@@ -62,7 +62,7 @@ export const games: Game[] = [
     description: 'Travel the ancient Silk Road around 650 CE, trade between empires, and cross deserts and mountain passes to build a merchant fortune.',
     featured: true,
     releaseYear: 2026,
-    lifetimeVisits: 4441710,
+    lifetimeVisits: 4441742,
     peakCCU: 1592,
     peakCCUSource: 'public-tracker',
     robloxUrl: 'https://www.roblox.com/games/103073154610301/Silk-Road-Trading-Simulator'
@@ -75,7 +75,7 @@ export const games: Game[] = [
     description: 'Serve in the U.S. Armed Forces, deploy on operations in Africa, and rise through the ranks in a tactical, roleplay-first military simulation.',
     featured: true,
     releaseYear: 2024,
-    lifetimeVisits: 12213408,
+    lifetimeVisits: 12213462,
     peakCCU: 666,
     peakCCUSource: 'public-tracker',
     robloxUrl: 'https://www.roblox.com/games/121909225020263/Command-Authority-Military-Roleplay'
@@ -87,7 +87,7 @@ export const games: Game[] = [
     genre: 'school',
     description: 'Join one of two rival universities in an anime-inspired town, build friendships, customize your look, and stand up for your academy.',
     releaseYear: 2026,
-    lifetimeVisits: 169741,
+    lifetimeVisits: 169744,
     peakCCU: null,
     robloxUrl: 'https://www.roblox.com/games/72156617432799/Kiseki'
   },
@@ -99,7 +99,7 @@ export const games: Game[] = [
     tags: ['military'],
     description: 'Protect the President and the White House as a Secret Service agent, or find your own path as a civilian in Washington, D.C.',
     releaseYear: 2025,
-    lifetimeVisits: 4000265,
+    lifetimeVisits: 4000267,
     peakCCU: 675,
     peakCCUSource: 'public-tracker',
     robloxUrl: 'https://www.roblox.com/games/127499782145032/Line-of-Fire-Secret-Service-Roleplay'
@@ -133,7 +133,7 @@ export const games: Game[] = [
     genre: 'military',
     description: 'Deploy to Eastern Europe in a roleplay-first military simulation featuring leadership, teamwork, and high-stakes permadeath.',
     releaseYear: 2026,
-    lifetimeVisits: 15123,
+    lifetimeVisits: 15130,
     peakCCU: null,
     robloxUrl: 'https://www.roblox.com/games/122013016126886/Command-Authority-Second-Strike'
   },
@@ -144,7 +144,7 @@ export const games: Game[] = [
     genre: 'military',
     description: 'Enter Marine recruit training, qualify for specialized roles, and work your way through the ranks toward the Commandant.',
     releaseYear: 2025,
-    lifetimeVisits: 12194077,
+    lifetimeVisits: 12194251,
     peakCCU: 1964,
     peakCCUSource: 'public-tracker',
     robloxUrl: 'https://www.roblox.com/games/136611085381274/Marine-Academy-Military-Roleplay'
@@ -166,7 +166,7 @@ export const games: Game[] = [
     genre: 'military',
     description: 'Enlist at Fort Liberty, complete basic training, and advance as a soldier through drills, tryouts, and base operations.',
     releaseYear: 2025,
-    lifetimeVisits: 1282903,
+    lifetimeVisits: 1282904,
     peakCCU: null,
     robloxUrl: 'https://www.roblox.com/games/88270740762567/Army-Bootcamp-Fort-Liberty'
   },
