@@ -4,7 +4,6 @@ export const studio = {
   name: 'Red Parasol',
   tagline: 'We Build Worlds. You Write the Story.',
   description: 'Immersive roleplay worlds, creative simulators, and experiences shaped by the people who play them.',
-  foundedYear: 2024,
   siteUrl: 'https://redparasolgames.com',
   contactEmail: null as string | null,
   robloxGroupUrl: null as string | null,
