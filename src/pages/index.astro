@@ -28,7 +28,7 @@ const rankedFeatured = sortGamesByCCU(featuredGames);
     <div class="container">
       <div class="section-intro">
         <div><p class="eyebrow red-eyebrow">01 / OUR WORLDS</p><h2>Find your next<br/><em>adventure.</em></h2></div>
-        <div class="section-aside"><p>Every world is an invitation. Explore a few of the experiences we've created for players to make their own.</p><a class="text-link" href="/games/">See all {games.length} games <span class="outbound-arrow" aria-hidden="true"></span></a></div>
+        <div class="section-aside"><p>Every world is an invitation. Explore the worlds in our portfolio, built for players to make their own.</p><a class="text-link" href="/games/">See all {games.length} games <span class="outbound-arrow" aria-hidden="true"></span></a></div>
       </div>
       <div class="featured-grid">{rankedFeatured.map((game, index) => <GameCard game={game} index={index} featured/>)}</div>
       <div class="browse-all"><a class="button button-outline" href="/games/">Browse all experiences <span class="outbound-arrow" aria-hidden="true"></span></a></div>
