@@ -1,17 +1,17 @@
 {
   "order": [
-    "oath-of-office",
     "seishun",
+    "oath-of-office",
     "marine-academy",
     "silk-road",
     "command-authority",
     "naval-academy",
-    "command-authority-second-strike",
-    "line-of-fire",
-    "clean-a-bloxbuster",
-    "kiseki",
-    "isekai-trading-simulator",
     "moosewood",
-    "army-bootcamp"
+    "command-authority-second-strike",
+    "kiseki",
+    "line-of-fire",
+    "isekai-trading-simulator",
+    "army-bootcamp",
+    "clean-a-bloxbuster"
   ]
 }
